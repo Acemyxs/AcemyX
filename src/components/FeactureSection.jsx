@@ -1,5 +1,5 @@
 function FeactureSection() {
-  return <div>Feature Section</div>;
+  return <div className='text-red-500'>Feature Section</div>;
 }
 
 export default FeactureSection;

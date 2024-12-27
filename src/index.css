@@ -1,0 +1,12 @@
+/* src/index.css */
+
+/* 1. Import CSS variables first */
+@import "./variable.css"; /* 2. Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Apply the base font size to HTML */
+html {
+  font-size: var(--base-font-size);
+}

@@ -1,13 +1,10 @@
+import "./index.css";
+import Home from "./pages/Home";
 
-import './App.css'
-import Home from './pages/Home'
-
-
-export default function App(){
+export default function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Home />
     </div>
-  )
+  );
 }
-
