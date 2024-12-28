@@ -1,3 +1,3 @@
 export default function FeaturedInSection() {
-  return <div>FeatureInSection</div>;
+  return <section className="w-[80%] mx-auto py-32">FeatureInSection</section>;
 }

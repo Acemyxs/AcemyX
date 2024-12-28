@@ -1,3 +1,5 @@
 export default function TestimonialSection() {
-  return <div>TestimonialSection</div>;
+  return (
+    <section className="w-[80%] mx-auto py-32">TestimonialSection</section>
+  );
 }

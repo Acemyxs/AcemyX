@@ -1,3 +1,3 @@
 export default function CTASection() {
-  return <div>CTASection</div>;
+  return <section className="w-[80%] mx-auto py-32">CTASection</section>;
 }

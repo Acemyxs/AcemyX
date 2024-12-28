@@ -1,3 +1,3 @@
 export default function PracticeSection() {
-  return <div>PraticeSection</div>;
+  return <section className="w-[80%] mx-auto py-32">PraticeSection</section>;
 }
