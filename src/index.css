@@ -1,12 +1,18 @@
 /* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* 1. Import CSS variables first */
-@import "./variable.css"; /* 2. Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 3. Apply the base font size to HTML */
-html {
-  font-size: var(--base-font-size);
+@layer base {
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: theme("colors.primary-bg");
+    color: theme("colors.primary-text");
+  }
 }
