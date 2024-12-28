@@ -24,32 +24,44 @@ export default function ExamCard() {
   ];
 
   return (
-    <div className='grid  justify-between px-40 mx-auto grid-cols-3 gap-5 items-center'>
-      <div className='bg-slate-300 px-5 py-5 rounded-lg flex flex-col'>
-        <img src='./image23.png' alt='' />
-        <h1 className='text-xl font-bold py-2 '>Jamb Practice Text</h1>
-        <p className='w-[30ch]'>
-          Ace your JAMB exam with our practice test, featuring diverse questions
-          to boost your confidence!
-        </p>
-      </div>
-      <div className='bg-slate-300 px-5 py-5 rounded-lg flex flex-col'>
-        <img src='./image23.png' alt='' />
-        <h1 className='text-xl font-bold py-2 '>WAEC Practice Test</h1>
-        <p className='w-[40ch]'>
-          Assists students in getting ready for the West African Examinations
-          Council assessments by providing practice questions and tracking their
-          performance.
-        </p>
-      </div>
-      <div className='bg-slate-300 px-5 py-5 rounded-lg flex flex-col'>
-        <img src='./image23.png' alt='' />
-        <h1 className='text-xl font-bold py-2 '>Quiz Test</h1>
-        <p className='w-[30ch]'>
-          The Quiz Test is a fun tool that boosts learning and confidence by
-          providing instant feedback on knowledge assessment.
-        </p>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.7fr_1.5fr] gap-8">
+      {tests.map((test) => (
+        <div
+          key={test.id}
+          className="group relative bg-slate-200 p-6 rounded-2xl"
+        >
+          <div className="aspect-[4/2] mb-4 overflow-hidden rounded-xl">
+            <img
+              src={test.image}
+              alt="Laptop and study materials"
+              className="w-full h-full"
+            />
+          </div>
+          <div className="flex justify-between items-start gap-6">
+            <div>
+              <h3 className="text-xl font-semibold mb-2">{test.title}</h3>
+              <p className="text-gray-700 text-sm">{test.description}</p>
+            </div>
+            <button className="p-3 bg-black rounded-xl text-white group-hover:translate-x-1 transition-transform">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="-rotate-45"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      ))}
+      {/* JAMB Practice Test */}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import ExamCard from "./ExamCard";
 
 export default function PracticeSection() {
   return (
-    <div>
+    <section className="w-[80%] mx-auto py-32">
       <div>
         <h1 className="text-3xl w-[28ch] py-3 text-center font-bold mx-auto leading-10">
           Practice for your Exam with real test similation
@@ -23,6 +23,6 @@ export default function PracticeSection() {
         </div>
       </div>
       <ExamCard />
-    </div>
+    </section>
   );
 }
