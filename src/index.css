@@ -6,8 +6,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* html {
-    font-size: 62.5%; /* 1rem = 10px */
   body {
     font-family: "Poppins", sans-serif;
     background-color: theme("colors.primary-bg");
