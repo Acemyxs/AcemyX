@@ -61,10 +61,10 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden">
+    <section className='relative' id='testimonial'>
+      <div className='overflow-hidden'>
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className='flex transition-transform duration-500 ease-in-out'
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {testimonials.map((testimonial, index) => (
@@ -72,11 +72,11 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
-      <div className="flex justify-end gap-6">
+      <div className='flex justify-end gap-6'>
         <ButtonPrev onClick={prevSlide} currentSlide={currentSlide} />
         <ButtonNext onClick={nextSlide} currentSlide={currentSlide} />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -89,16 +89,16 @@ function ButtonPrev({ onClick, currentSlide }) {
       }`}
     >
       <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+        className='w-8 h-8'
+        fill='none'
+        stroke='currentColor'
+        viewBox='0 0 24 24'
       >
         <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          strokeLinecap='round'
+          strokeLinejoin='round'
           strokeWidth={2}
-          d="M15 19l-7-7 7-7"
+          d='M15 19l-7-7 7-7'
         />
       </svg>
     </button>
@@ -116,16 +116,16 @@ function ButtonNext({ onClick, currentSlide }) {
       }`}
     >
       <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+        className='w-8 h-8'
+        fill='none'
+        stroke='currentColor'
+        viewBox='0 0 24 24'
       >
         <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          strokeLinecap='round'
+          strokeLinejoin='round'
           strokeWidth={2}
-          d="M9 5l7 7-7 7"
+          d='M9 5l7 7-7 7'
         />
       </svg>
     </button>
@@ -134,7 +134,7 @@ function ButtonNext({ onClick, currentSlide }) {
 
 export function DotsIndicator({ handleSlide, currentSlide }) {
   return (
-    <div className="flex justify-center gap-2 mt-6">
+    <div className='flex justify-center gap-2 mt-6'>
       {testimonials.map((_, index) => (
         <button
           key={index}
