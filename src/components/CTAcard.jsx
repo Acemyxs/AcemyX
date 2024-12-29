@@ -5,7 +5,7 @@ export default function CTAcard() {
         <img src='/study-note.png' alt='' className='absolute top-0 left-0' />
         <div className='w-fit relative'>
           <img src='/mockup.png' alt='' />
-          <img src='/Team.png' alt='' className='absolute top-0 right-30' />
+          <img src='/Team.png' alt='' className='absolute top-0 ' />
         </div>
       </div>
     </div>
