@@ -45,9 +45,9 @@ export default function Testimonials() {
     );
   };
 
-  const handleSlide = (index) => {
-    setCurrentSlide(index);
-  };
+  // const handleSlide = (index) => {
+  //   setCurrentSlide(index);
+  // };
 
   useEffect(() => {
     // Auto-slide every 5 seconds
