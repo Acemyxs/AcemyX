@@ -5,7 +5,7 @@ export default function Nav() {
       <ul className="flex gap-12 items-center">
         {navLinks.map((link) => (
           <li key={link}>
-            <a href="#home" className="capitalize font-medium">
+            <a href={`#${link}`} className="capitalize font-medium">
               {link}
             </a>
           </li>
