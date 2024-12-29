@@ -9,7 +9,7 @@ export default function CTAcard() {
           <img
             src='./Chat.svg'
             alt=''
-            className='absolute top-[0%] right-[50%] left-[50%] translate-y-1/4'
+            className='absolute top-[0%] right-[50%] -translate-x-1/2 left-[50%] translate-y-1/4'
           />
         </div>
         <img src='/Team.svg' alt='' className='absolute top-0 right-40 ' />
