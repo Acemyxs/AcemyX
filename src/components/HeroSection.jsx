@@ -19,6 +19,11 @@ function HeroSection() {
       <div className="flex justify-center">
         <ButtonCta>Sign up for free</ButtonCta>
       </div>
+      <img
+        src="/hero.svg"
+        alt="Student studying"
+        className="absolute bottom-0 right-0 w-1/3"
+      />
     </section>
   );
 }
