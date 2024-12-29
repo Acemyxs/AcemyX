@@ -1,13 +1,15 @@
 function PromotionalSection() {
   return (
     <section className="w-[80%] mx-auto py-32">
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-2 gap-8">
         {/* Left side with text and metrics */}
-        <div className="space-y-8">
-          <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-800 max-w-lg">
-            {`Whether you're facing high-stakes exams or simply trying to ace your
+        <div className="grid gap-8">
+          <div className="bg-white p-3 rounded-2xl">
+            <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-800 max-w-lg">
+              {`Whether you're facing high-stakes exams or simply trying to ace your
             courses, we've got you covered.`}
-          </p>
+            </p>
+          </div>
 
           <div className="grid grid-cols-2 gap-4">
             {/* Metric Card 1 */}
@@ -17,7 +19,7 @@ function PromotionalSection() {
             </div>
 
             {/* Metric Card 2 */}
-            <div className="bg-gray-900 text-white p-6 rounded-2xl">
+            <div className="bg-white p-6 rounded-2xl">
               <p className="text-sm font-medium mb-2">
                 Increase Comprehension by up to
               </p>

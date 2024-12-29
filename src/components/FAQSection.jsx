@@ -70,7 +70,7 @@ export default function FAQSection() {
               }
               className="flex justify-between items-center w-full text-left py-2 text-gray-900"
             >
-              <span className="font-medium">{faq.question}</span>
+              <h4 className="font-medium max-w-[90%]">{faq.question}</h4>
               <svg
                 className={`w-5 h-5 transform transition-transform ${
                   openQuestion === faq.id ? "rotate-180" : ""
@@ -88,7 +88,9 @@ export default function FAQSection() {
               </svg>
             </button>
             {openQuestion === faq.id && (
-              <div className="mt-2 text-gray-600 text-sm">{faq.answer}</div>
+              <div className="mt-2 text-gray-600 text-sm max-w-[90%]">
+                {faq.answer}
+              </div>
             )}
           </div>
         ))}

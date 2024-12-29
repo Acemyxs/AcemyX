@@ -8,7 +8,7 @@ export default function TestimonialSection() {
       </h2>
       <div className="grid md:grid-cols-2 gap-12">
         <div>
-          <img src="/Group 105.png" alt="group" className="block w-full" />
+          <img src="/group-test.svg" alt="group" className="block w-full" />
         </div>
         <Testimonials />
       </div>
