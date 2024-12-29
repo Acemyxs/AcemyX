@@ -14,7 +14,7 @@ export default function PricingSection() {
           <div className="my-6">
             <span className="text-[#4ADE80] text-4xl font-bold">FREE</span>
           </div>
-          <ul className="space-y-4 mb-8">
+          <ul className="space-y-4 mb-8 min-h-[8rem]">
             <li className="flex items-center gap-2">
               <svg
                 className="w-5 h-5 text-[#4ADE80]"

@@ -2,8 +2,8 @@ import ButtonCta from "./ButtonCta";
 
 function HeroSection() {
   return (
-    <section className="relative h-screen">
-      <h1 className="text-center text-6xl font-bold leading-tight w-[15ch] mx-auto mt-16 mb-8">
+    <section className="relative h-[90vh]">
+      <h1 className="text-center text-7xl font-bold leading-tight w-[15ch] mx-auto mt-16 mb-8">
         Elevate{" "}
         <span className="text-orange-600">
           your
@@ -19,11 +19,6 @@ function HeroSection() {
       <div className="flex justify-center">
         <ButtonCta>Sign up for free</ButtonCta>
       </div>
-      <img
-        src="/hero.svg"
-        alt="Student studying"
-        className="absolute bottom-0 right-0 w-1/3"
-      />
     </section>
   );
 }
