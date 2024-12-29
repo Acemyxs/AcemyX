@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 export default function Rating({ rating = 4.5 }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-0.5">
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
           className={`w-5 h-5 ${
-            i < rating ? "text-yellow-400" : "text-gray-200"
+            i < rating ? "text-[#ffa72d]" : "text-gray-200"
           }`}
           fill="currentColor"
           viewBox="0 0 20 20"

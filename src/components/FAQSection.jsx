@@ -29,8 +29,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-[80%] mx-auto py-32">
-      <h2 className="text-3xl font-bold text-center mb-8">
+    <section className="w-[80%] mx-auto py-24">
+      <h2 className="text-3xl font-semibold text-center mb-8">
         Frequently Asked Questions
       </h2>
 

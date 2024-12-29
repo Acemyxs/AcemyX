@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#0B0F17] text-white py-12 px-6">
+    <footer className="bg-[#0B0F17] text-white mt-12 py-12 px-6">
       <div className="container mx-auto">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between mb-12">

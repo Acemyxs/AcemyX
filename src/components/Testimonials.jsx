@@ -89,7 +89,7 @@ function ButtonPrev({ onClick, currentSlide }) {
       }`}
     >
       <svg
-        className="w-6 h-6"
+        className="w-8 h-8"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ function ButtonNext({ onClick, currentSlide }) {
       }`}
     >
       <svg
-        className="w-6 h-6"
+        className="w-8 h-8"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
