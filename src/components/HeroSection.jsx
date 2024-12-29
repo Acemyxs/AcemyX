@@ -2,7 +2,7 @@ import ButtonCta from "./ButtonCta";
 
 function HeroSection() {
   return (
-    <section className="relative h-[90vh]">
+    <section id="home" className="relative h-[90vh]">
       <h1 className="text-center text-7xl font-bold leading-tight w-[15ch] mx-auto mt-16 mb-8">
         Elevate{" "}
         <span className="text-orange-600">
