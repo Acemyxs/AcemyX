@@ -1,4 +1,5 @@
 import ButtonCta from "./ButtonCta";
+import CTAcard from "./CTAcard";
 
 export default function CTASection() {
   return (
@@ -16,6 +17,7 @@ export default function CTASection() {
       <div className='flex justify-center mt-6'>
         <ButtonCta>Get Access Now</ButtonCta>
       </div>
+      <CTAcard />
     </section>
   );
 }
