@@ -1,28 +1,39 @@
+import { useState } from "react";
 import ExamCard from "./ExamCard";
 
 export default function PracticeSection() {
+  const [practice, setPractice] = useState("general");
+
   return (
     <section className="w-[80%] mx-auto py-32">
       <div>
-        <h1 className="text-3xl w-[28ch] py-3 text-center font-bold mx-auto leading-10">
+        <h2 className="text-4xl font-bold text-center w-[25ch] mx-auto mb-6">
           Practice for your Exam with real test similation
-        </h1>
-        <p className="mx-auto text-center text-lg w-[65ch] ">
+        </h2>
+        <p className="w-[75ch] font-medium mx-auto text-center mb-12 text-gray-500">
           Use practice tests to get ready for real exams. Get instant feedback,
           monitor your progress, and work on improving, all through AcemyX
         </p>
       </div>
-      <div>
-        <div>
-          <div className="text-center mx-auto  my-4 bg-slate-200 w-fit py-4 px-2 rounded-full">
-            <span className="px-7 py-3 bg-white rounded-full font-semibold">
-              General
-            </span>
-            <span className="px-6 py-3 font-semibold">Subject</span>
-          </div>
-        </div>
+      <div className="mx-auto bg-slate-200 w-fit p-2 rounded-full mb-12">
+        <button
+          onClick={() => setPractice("general")}
+          className={`px-6 py-3 rounded-full font-semibold ${
+            practice === "general" ? "bg-white" : ""
+          }`}
+        >
+          General
+        </button>
+        <button
+          onClick={() => setPractice("subject")}
+          className={`px-6 py-3 rounded-full font-semibold ${
+            practice === "subject" ? "bg-white" : ""
+          }`}
+        >
+          Subject
+        </button>
       </div>
-      <ExamCard />
+      {<ExamCard />}
     </section>
   );
 }
