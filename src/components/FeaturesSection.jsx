@@ -2,13 +2,14 @@ import FeatureCards from "./FeatureCards";
 
 export default function FeaturesSection() {
   return (
-    <section className="w-[80%] mx-auto py-32">
-      <h1 className="text-2xl font-bold text-center w-[25ch] mx-auto mb-8">
+    <section className="w-[80%] mx-auto py-20">
+      <h2 className="text-4xl font-bold text-center w-[25ch] mx-auto mb-6">
         Features for exceptional performance
-      </h1>
-      <p className="w-[55ch] font-medium mx-auto text-center mb-8 text-gray-500">
-        Use practice tests to get ready for real exams. Get instant feedback,
-        monitor your progress, and work on improving, all through AcemyX
+      </h2>
+      <p className="w-[75ch] font-medium mx-auto text-center mb-12 text-gray-500">
+        Get study materials whenever you need them. An AI tool that helps you
+        think critically and practice with over 50,000 questions that mimic real
+        exams.
       </p>
       <div>
         <FeatureCards />
