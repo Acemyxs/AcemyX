@@ -1,11 +1,11 @@
 export default function Logo() {
   return (
-    <a href='#'>
+    <div className='flex items-center'>
       <img
-        src='/acemyx-logo.svg'
-        alt='AcemyX logo  '
-        className='w-32 h-32 items-center'
+        src='/AcemyX.svg'
+        alt='AcemyX Logo'
+        className='h-8 md:h-auto w-auto'
       />
-    </a>
+    </div>
   );
 }
