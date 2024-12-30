@@ -2,8 +2,8 @@ import CountUp from "react-countup";
 
 export default function StatisticsSection() {
   return (
-    <section className='w-[80%] mx-auto pb-16'>
-      <div className='grid grid-cols-1 gap-8 md:grid-cols-4 sm:grid-cols-2 mx-auto'>
+    <section className='w-[80%] mx-auto pb-16 mt-6'>
+      <div className='grid grid-cols-1 gap-8 md:grid-cols-4 sm:grid-cols-2 mx-auto   '>
         <div className='flex flex-col items-center'>
           <CountUp
             className='text-5xl mb-2 font-bold'
