@@ -3,7 +3,7 @@ function HeroSection() {
   return (
     <section
       id='home'
-      className='relative h-[90vh] flex flex-col justify-center items-center text-center px-4'
+      className='relative h-[80vh] flex flex-col justify-center items-center text-center px-4'
     >
       <h1 className='text-[32px] md:text-[48px] lg:text-[80px] font-bold leading-tight max-w-[15ch] mx-auto'>
         Elevate{" "}

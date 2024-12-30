@@ -11,14 +11,16 @@ function PromotionalSection() {
           </div>
           <div className='grid grid-cols-2 gap-6'>
             <div className='bg-gray-900 text-white p-6 rounded-3xl'>
-              <p className='text-lg font-medium mb-2'>Boost your Confidence</p>
+              <p className='text-[12px] md:text-lg font-medium mb-2'>
+                Boost your Confidence
+              </p>
               <p className='text-3xl'>
                 <span className='font-semibold'>20%</span> Higher
               </p>
             </div>
 
             <div className='bg-white p-6 rounded-2xl'>
-              <p className='text-lg font-medium mb-2'>
+              <p className='text-[12px] md:text-lg font-medium mb-2'>
                 Increase Comprehension
                 <br /> by up to{" "}
                 <span className='text-4xl font-semibold translate-y-1/2 translate-x-1/4 inline-block'>
