@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header
       ref={ref}
-      className={`flex justify-between items-center px-8 py-4 w-full duration-300 bg-white transition-all z-50 ${
+      className={`flex justify-between items-center px-8 py-4  h-16 md:h-24 w-full duration-300 bg-white transition-all z-50 ${
         !isIntersecting ? "fixed top-0 left-0 opacity-[0.95] shadow-md" : ""
       }`}
     >
