@@ -134,7 +134,7 @@ function ButtonNext({ onClick, currentSlide }) {
 
 export function DotsIndicator({ handleSlide, currentSlide }) {
   return (
-    <div className='flex justify-center gap-2 mt-6'>
+    <div className='flex  justify-center gap-2 mt-6 '>
       {testimonials.map((_, index) => (
         <button
           key={index}
