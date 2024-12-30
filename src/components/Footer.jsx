@@ -96,22 +96,7 @@ export default function Footer() {
                   placeholder='Enter your email'
                   className='bg-transparent border-b border-gray-700 py-2 pr-4 flex-grow focus:outline-none focus:border-gray-500'
                 />
-                <button className='ml-2 p-2'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='h-6 w-6'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M14 5l7 7m0 0l-7 7m7-7H3'
-                    />
-                  </svg>
-                </button>
+                <button className='ml-2 p-2'></button>
               </div>
             </div>
 

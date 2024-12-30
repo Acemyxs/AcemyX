@@ -14,7 +14,7 @@ function PromotionalSection() {
               <p className='text-[12px] md:text-lg font-medium mb-2'>
                 Boost your Confidence
               </p>
-              <p className='text-3xl'>
+              <p className='text-2xl md:text-3xl'>
                 <span className='font-semibold'>20%</span> Higher
               </p>
             </div>
@@ -23,7 +23,7 @@ function PromotionalSection() {
               <p className='text-[12px] md:text-lg font-medium mb-2'>
                 Increase Comprehension
                 <br /> by up to{" "}
-                <span className='text-4xl font-semibold translate-y-1/2 translate-x-1/4 inline-block'>
+                <span className='md:text-4xl text-3xl font-semibold translate-y-1/2 translate-x-1/4 inline-block'>
                   80%
                 </span>
               </p>
