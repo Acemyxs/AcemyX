@@ -7,7 +7,7 @@ export default function Footer() {
           <h2 className='text-4xl font-semibold text-gray-100 '>
             Ready to transform your Learning?
           </h2>
-          <div className='flex space-x-4'>
+          <div className='flex space-x-4 flex-wrap'>
             <a
               href='#'
               className='hover:text-white transition-colors px-3 py-1 rounded-full border border-gray-800'

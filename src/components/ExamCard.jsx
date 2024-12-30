@@ -24,38 +24,38 @@ export default function ExamCard() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.7fr_1.5fr] gap-8">
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.7fr_1.5fr] gap-8'>
       {tests.map((test) => (
         <div
           key={test.id}
-          className="group relative bg-slate-200 p-6 rounded-2xl"
+          className='group relative bg-slate-200 p-6 rounded-2xl'
         >
-          <div className="aspect-[4/2] mb-4 overflow-hidden rounded-xl">
+          <div className='aspect-[4/2] mb-4 overflow-hidden rounded-xl'>
             <img
               src={test.image}
-              alt="Laptop and study materials"
-              className="w-full h-full"
+              alt='Laptop and study materials'
+              className='w-full h-full'
             />
           </div>
-          <div className="flex justify-between items-start gap-6">
+          <div className='flex justify-between items-start gap-6'>
             <div>
-              <h3 className="text-xl font-semibold mb-2">{test.title}</h3>
-              <p className="text-gray-700 text-sm">{test.description}</p>
+              <h3 className='text-xl font-semibold mb-2'>{test.title}</h3>
+              <p className='text-gray-700 text-sm'>{test.description}</p>
             </div>
-            <button className="p-3 bg-black rounded-xl text-white group-hover:translate-x-1 transition-transform">
+            <button className='p-3 bg-black rounded-xl text-white group-hover:translate-x-1 transition-transform'>
               <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="-rotate-45"
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                className='-rotate-45'
               >
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+                <line x1='5' y1='12' x2='19' y2='12'></line>
+                <polyline points='12 5 19 12 12 19'></polyline>
               </svg>
             </button>
           </div>
