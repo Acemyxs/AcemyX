@@ -22,7 +22,7 @@ function HeroSection() {
 
       <div className='flex justify-center'>
         <ButtonCta className='text-[14px] md:text-[16px] px-6 py-3 md:px-8 md:py-4'>
-          Sign up for free
+          <a href='https://academy.acemyx.com/'>Sign up for free</a>
         </ButtonCta>
       </div>
     </section>

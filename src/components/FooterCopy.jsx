@@ -1,7 +1,7 @@
 export default function FooterCopy() {
   return (
     <section className='bg-gray-950 text-white'>
-      <div className='py-16 grid grid-cols-1 lg:grid-cols-[3fr_1fr]   gap-8 items-center justify-center mx-auto px-8'>
+      <div className='py-16 grid grid-cols-1 lg:grid-cols-[3fr_1fr]   gap-8 items-start justify-center mx-auto px-8'>
         <div className='container mx-auto px-4'>
           <h1 className='text-[24px] md:text-[36px] lg:text-[40px] font-semibold mb-12'>
             Ready to transform your Learning?
@@ -130,7 +130,7 @@ export default function FooterCopy() {
 
             {/* WhatsApp Button */}
             {/* WhatsApp Button */}
-            <button className='mt-6 bg-[#2CA94C] text-white px-[16px] py-[24px] rounded-[16px] flex items-center space-x-2 hover:bg-green-600 transition-colors'>
+            <button className='mt-6 bg-[#2CA94C] text-white px-[24px] py-[16px] rounded-[16px] flex items-center space-x-2 hover:bg-green-600 transition-colors'>
               <img src='whatsapp.svg' alt='' className='w-8 h-8' />
               <span className='text-[16px]'>WhatsApp Message</span>
             </button>
