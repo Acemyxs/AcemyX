@@ -36,7 +36,7 @@ export default function Nav() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 w-full h-screen bg-white/90 backdrop-blur-sm z-50 transform transition-transform duration-300 ease-in-out lg:hidden text-center flex items-center justify-center ${
+        className={`fixed inset-0 w-full h-screen bg-white/90 backdrop-blur-md z-50 transform transition-transform duration-300 ease-in-out lg:hidden text-center flex items-center justify-center ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

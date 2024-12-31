@@ -3,8 +3,8 @@ import Rating from "./Rating";
 
 export default function TestimonialCard({ testimonial }) {
   return (
-    <div className='w-full md:max-w-[500px] flex-shrink-0 px-3 md:px-4'>
-      <div className='p-4 md:p-6 rounded-lg  shadow-sm min-h-[200px] md:min-h-[250px] flex flex-col'>
+    <div className='w-full md:max-w-[700px] flex-shrink-0 px-3 md:px-4'>
+      <div className='p-4 md:p-6 rounded-lg   min-h-[200px] md:min-h-[250px] flex flex-col'>
         <p className='text-gray-700 text-[14px] md:text-[16px] flex-grow mb-4'>
           {testimonial.text}
         </p>
