@@ -1,4 +1,4 @@
-<svg width="410" height="296" viewBox="0 0 410 296" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="410" height="345" viewBox="0 0 410 345" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_337_184)">
 <g clip-path="url(#clip1_337_184)">
 <path d="M588.958 87.9341H180.361C171.721 87.9341 164.718 94.941 164.718 103.581V374.165C164.718 382.805 171.721 389.808 180.361 389.808H588.958C597.598 389.808 604.601 382.805 604.601 374.165V103.581C604.601 94.941 597.598 87.9341 588.958 87.9341ZM594.416 374.106C594.416 377.162 591.938 379.636 588.882 379.636H179.216C176.165 379.636 173.686 377.162 173.686 374.106V102.499C173.686 99.444 176.165 96.9694 179.216 96.9694H588.882C591.938 96.9694 594.416 99.444 594.416 102.499V374.106Z" fill="#080707"/>
@@ -31,7 +31,7 @@
 <use xlink:href="#image1_337_184" transform="matrix(0.004 0 0 0.00195122 0 -0.0912488)"/>
 </pattern>
 <clipPath id="clip0_337_184">
-<rect width="410" height="296" fill="white"/>
+<rect width="410" height="345" fill="white"/>
 </clipPath>
 <clipPath id="clip1_337_184">
 <rect width="443.594" height="306.233" fill="white" transform="translate(161.09 83.7051)"/>
