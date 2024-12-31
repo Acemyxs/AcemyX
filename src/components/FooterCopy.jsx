@@ -1,7 +1,7 @@
 export default function FooterCopy() {
   return (
     <section className='bg-gray-950 text-white'>
-      <div className='py-16 grid grid-cols-1 lg:grid-cols-[3fr_1fr]   gap-8 items-start justify-center mx-auto px-8'>
+      <div className='py-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr]   gap-8 items-start justify-center mx-auto md:px-8 '>
         <div className='container mx-auto px-4'>
           <h1 className='text-[24px] md:text-[36px] lg:text-[40px] font-semibold mb-12'>
             Ready to transform your Learning?
