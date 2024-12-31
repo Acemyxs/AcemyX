@@ -119,7 +119,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className='mt-16 text-sm text-gray-500'>
-          All Rights Reserved 2024 Acemyx
+          © 2024, AcemyX Global Limited. All Rights Reserved.
         </div>
       </div>
     </footer>
