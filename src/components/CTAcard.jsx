@@ -31,11 +31,11 @@ export default function CTAcard() {
         </div>
       </div>
       {/* mobile view of the image */}
-      <div className='md:hidden -mx-4 overflow-hidden  relative w-screen'>
+      <div className='md:hidden -mx-4 overflow-hidden  relative w-[100%]'>
         <img
           src='/phone-mock-up.svg'
           alt='phone mock up'
-          className='w-full m-0'
+          className='w-[100%] m-0'
         />
         <img
           src='./mchat.svg'
