@@ -9,7 +9,7 @@ import PricingSection from "../components/PricingSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FeaturedInSection from "../components/FeaturedInSection";
 import FAQSection from "../components/FAQSection";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import FooterCopy from "../components/FooterCopy";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       <TestimonialsSection />
       <FeaturedInSection />
       <FAQSection />
-      <Footer />
+      {/* <Footer /> */}
       <FooterCopy />
     </div>
   );
