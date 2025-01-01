@@ -1,4 +1,16 @@
+import { useState } from "react";
+
 export default function FooterCopy() {
+  const [email, setEmail] = useState("");
+
+  const phoneNumber = "2348143050414";
+  const message = encodeURIComponent(
+    "Hello! I will like to know more about AcemyX."
+  );
+
+  // Construct the WhatsApp URL
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
   return (
     <section className='bg-gray-950 text-white'>
       <div className='py-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr]   gap-8 items-start justify-center mx-auto md:px-8 '>
@@ -10,11 +22,17 @@ export default function FooterCopy() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             {/* Logo and Description Section */}
             <div className='space-y-4 col-span-2'>
-              <img src='acemyx-footer.svg' alt='AcemyX logo' className='h-10' />
+              <a href='#'>
+                <img
+                  src='acemyx-footer.svg'
+                  alt='AcemyX logo'
+                  className='h-10'
+                />
+              </a>
               <p className='text-[#A9AEB4] text-[14px] md:text-[16] max-w-md '>
                 Acemyx ensures every student has access to top-quality learning
                 materials, expert mentorships and a supportive community to
-                excel in WAEC, NECO and UTME exams.
+                excel in WAEC, and UTME exams.
               </p>
             </div>
 
@@ -94,20 +112,31 @@ export default function FooterCopy() {
         <div className='container  lg:pt-0 lg:mt-0 mx-auto px-4'>
           {/* Social Media Links */}
           <div className='flex flex-wrap gap-4 mb-8'>
-            <button className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'>
+            <a
+              href=''
+              className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
+            >
               <img src='instagram.svg' alt='' className='w-4 h-4' />
               <span className='text-sm'>Instagram</span>
-            </button>
+            </a>
 
-            <button className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'>
+            <a
+              href='https://www.facebook.com/share/18AZ6f5pUb/?mibextid=LQQJ4d'
+              target='_blank'
+              className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
+            >
               <img src='facebook.svg' alt='' className='w-4 h-4' />
               <span className='text-sm'>Facebook</span>
-            </button>
+            </a>
 
-            <button className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'>
+            <a
+              href='https://www.linkedin.com/company/acemyx/'
+              target='_blank'
+              className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
+            >
               <img src='ln.svg' alt='' className='w-4 h-4' />
               <span className='text-sm'>LinkedIn</span>
-            </button>
+            </a>
           </div>
 
           {/* Stay Connected Section */}
@@ -117,23 +146,35 @@ export default function FooterCopy() {
             </h3>
 
             {/* Email Input */}
-            <div className=' mb-4 relative '>
+            <div className='mb-4 relative'>
               <input
                 type='email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder='Enter your email'
-                className='w-[80%] bg-transparent border-b border-gray-700 pb-2 pr-10 focus:outline-none focus:border-gray-500 text-sm placeholder-gray-500 '
+                className='w-[80%] bg-transparent border-b border-gray-700 pb-2 pr-12 focus:outline-none focus:border-gray-500 text-sm placeholder-gray-500'
               />
-              <button className='absolute right-0 bottom-2 text-gray-400 hover:text-white transition-colors z-10'>
-                <img src='mail.svg' alt='' className='w-4 h-4' />
-              </button>
+              <a
+                href={`mailto:contact.acemyx@gmail.com?subject=Newsletter Subscription&body=Please add me to your mailing list. My email is ${encodeURIComponent(
+                  email
+                )}`}
+                className='absolute left-[75%] bottom-2.5 text-gray-400 hover:text-white transition-colors z-10'
+              >
+                <img src='mail.svg' alt='Send email' className='w-5 h-5' />
+              </a>
             </div>
 
             {/* WhatsApp Button */}
             {/* WhatsApp Button */}
-            <button className='mt-6 bg-[#2CA94C] text-white px-[24px] py-[16px] rounded-[16px] flex items-center space-x-2 hover:bg-green-600 transition-colors'>
+            <a
+              href={whatsappUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-6 bg-[#2CA94C] text-white px-[24px] py-[16px] rounded-[16px] flex items-center space-x-2 hover:bg-green-600 transition-colors'
+            >
               <img src='whatsapp.svg' alt='' className='w-8 h-8' />
               <span className='text-[16px]'>WhatsApp Message</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

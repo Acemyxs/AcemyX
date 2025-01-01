@@ -1,5 +1,5 @@
 import ButtonCta from "./ButtonCta";
-function HeroSection() {
+export default function HeroSection() {
   return (
     <section
       id='home'
@@ -21,7 +21,7 @@ function HeroSection() {
             <img
               src='/star.svg'
               alt='star'
-              className='w-16 h-16 md:w-10 md:h-10 animate-pulse z-50'
+              className='w-16 h-16 md:w-10 md:h-10 animate-pulse'
             />
           </div>
         </span>{" "}
@@ -45,11 +45,14 @@ function HeroSection() {
 
       <div className='flex justify-center'>
         <ButtonCta className='text-[14px] md:text-[16px] px-6 py-3 md:px-8 md:py-4'>
-          <a href='https://academy.acemyx.com/'>Sign up for free</a>
+          <a
+            href='https://academy.acemyx.com/login/signup.php?'
+            target='_blank'
+          >
+            Sign up for free
+          </a>
         </ButtonCta>
       </div>
     </section>
   );
 }
-
-export default HeroSection;
