@@ -7,7 +7,7 @@ export default function FeaturesSection() {
         Features for exceptional performance
       </h2>
 
-      <p className='text-[12px] sm:text-[12px] w-[40ch] sm:w-[50ch] md:w-[75ch] font-medium md:mx-auto md:text-center mb-8 md:mb-12 text-gray-500 mx-auto text-center'>
+      <p className='text-[12px] sm:text-[12px] w-full md:w-[75ch] font-medium md:mx-auto md:text-center mb-8 md:mb-12 text-gray-500 mx-auto text-center'>
         Get study materials whenever you need them. An AI tool that helps you
         think critically and practice with over 50,000 questions that mimic real
         exams.
