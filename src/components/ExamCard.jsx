@@ -28,7 +28,7 @@ export default function ExamCard() {
       {tests.map((test) => (
         <div
           key={test.id}
-          className='group relative bg-slate-200 p-6 rounded-2xl'
+          className='group relative bg-neutral-white-40 p-6 rounded-2xl'
         >
           <div className='aspect-[4/2] mb-4 overflow-hidden rounded-xl'>
             <img
@@ -40,9 +40,9 @@ export default function ExamCard() {
           <div className='flex justify-between items-start gap-6'>
             <div>
               <h3 className='text-xl font-semibold mb-2'>{test.title}</h3>
-              <p className='text-gray-700 text-sm'>{test.description}</p>
+              <p className='text-neutral-black-40 text-sm'>{test.description}</p>
             </div>
-            <button className='p-3 bg-black rounded-xl text-white group-hover:translate-x-1 transition-transform'>
+            <button className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
               <svg
                 width='24'
                 height='24'

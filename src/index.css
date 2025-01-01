@@ -12,7 +12,7 @@
   }
   body {
     font-family: "Poppins", sans-serif;
-    background-color: theme("colors.primary-bg");
-    color: theme("colors.primary-text");
+    background-color: theme("colors.bg-color");
+    color: theme("colors.text-color");
   }
 }

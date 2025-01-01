@@ -1,28 +1,28 @@
 export default function Footer() {
   return (
-    <footer className='bg-gray-950 text-gray-300 py-16 px-12'>
+    <footer className='bg-text-color text-neutral-white-15 py-16 px-12'>
       <div className='mx-auto'>
         {/* Header */}
         <div className='flex items-center justify-between mb-12'>
-          <h2 className='text-4xl font-semibold text-gray-100 '>
+          <h2 className='text-4xl font-semibold text-primary-10 '>
             Ready to transform your Learning?
           </h2>
           <div className='flex space-x-4 flex-wrap'>
             <a
               href='#'
-              className='hover:text-white transition-colors px-3 py-1 rounded-full border border-gray-800'
+              className='hover:text-neutral-black-15 transition-colors px-3 py-1 rounded-full border border-primary-30'
             >
               Instagram
             </a>
             <a
               href='#'
-              className='hover:text-white transition-colors px-3 py-1 rounded-full border border-gray-800'
+              className='hover:text-neutral-black-15 transition-colors px-3 py-1 rounded-full border border-primary-30'
             >
               Facebook
             </a>
             <a
               href='#'
-              className='hover:text-white transition-colors px-3 py-1 rounded-full border border-gray-800'
+              className='hover:text-neutral-black-15 transition-colors px-3 py-1 rounded-full border border-primary-30'
             >
               LinkedIn
             </a>
@@ -48,9 +48,9 @@ export default function Footer() {
 
           {/* List of Pages */}
           <div>
-            <h3 className='font-medium text-gray-100 mb-4'>List of Pages</h3>
+            <h3 className='font-normal text-primary-10 mb-4'>List of Pages</h3>
             <div className='space-y-3'>
-              <p className='text-sm font-medium text-gray-400'>General</p>
+              <p className='text-sm font-semibold text-gray-400'>General</p>
               <nav className='flex flex-col space-y-3 text-sm'>
                 <a href='#' className='hover:text-white transition-colors'>
                   Community
