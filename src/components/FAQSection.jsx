@@ -41,8 +41,8 @@ export default function FAQSection() {
           className={`px-6 py-2 rounded-full text-sm font-medium transition-colors
             ${
               activeTab === "general"
-                ? "bg-black text-white"
-                : "bg-transparent border border-gray-200 text-gray-600 hover:bg-gray-50"
+                ? "bg-text-color text-neutral-white-10"
+                : "bg-transparent border-text-color border-solid border-2 text-neutral-black-80 hover:bg-neutral-white-10"
             }`}
         >
           General
@@ -52,8 +52,8 @@ export default function FAQSection() {
           className={`px-6 py-2 rounded-full text-sm font-medium transition-colors
             ${
               activeTab === "services"
-                ? "bg-black text-white"
-                : "bg-transparent border border-gray-200 text-gray-600 hover:bg-gray-50"
+                ? "bg-text-color text-neutral-white-10"
+                : "bg-transparent border-text-color border-solid border-2 text-neutral-black-80 hover:bg-gray-50"
             }`}
         >
           Services
