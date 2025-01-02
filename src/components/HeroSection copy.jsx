@@ -65,7 +65,7 @@ export default function HeroSection() {
             <img
               src='/ring.svg'
               alt='ring'
-              className='absolute right-[30%] bottom-[35%] w-24 h-24 z-10'
+              className='absolute right-[6%] bottom-[50%] md:right-[18%] md:bottom-[42%] lg:right-[17%] lg:bottom-[34%] w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 z-10'
             />
           </span>
         ))}
