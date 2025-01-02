@@ -52,14 +52,10 @@ export default function HeroSection() {
       id='home'
       className='relative h-[80vh] flex flex-col justify-center items-center text-center px-4'
     >
-      {/* <div className='absolute left-[10%] md:left-[20%] lg:left-[25%] top-[35%] md:top-32'>
-        <img
-          src='/star.svg'
-          alt='star'
-          className='w-8 h-8 md:w-10 md:h-10 animate-pulse'
-        />
-      </div> */}
-      <h1 className='text-[32px] md:text-[48px] lg:text-[80px] font-bold leading-tight mb-4'>
+      <div className='absolute left-[10%] md:left-[20%] lg:left-[25%] top-[10%] md:top-[15%]'>
+        <img src='/star.svg' alt='star' className='w-8 h-8 md:w-10 md:h-10 ' />
+      </div>
+      <h1 className='text-[38px] md:text-[52px] lg:text-[86px] font-bold leading-tight mb-4'>
         {headerTexts[headerText].map((line, index) => (
           <span
             key={index}

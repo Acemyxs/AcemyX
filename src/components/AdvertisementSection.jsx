@@ -22,7 +22,11 @@ function PromotionalSection() {
 
             <div className='bg-neutral-white-60 md:px-10 md:py-6  p-6 rounded-[48px]'>
               <p className=' text-[14px] lg:w-[16ch] md:text-[24px] font-medium mb-2'>
-                Boost Your Scores by an Average of 50 Points
+                Boost Your Scores by an Average of <br />
+                <span className='font-semibold text-2xl md:text-3xl '>
+                  50
+                </span>{" "}
+                <span className='text-[12px] md:text-[24px]'>Points</span>
               </p>
             </div>
           </div>

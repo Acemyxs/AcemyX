@@ -6,7 +6,7 @@ export default function StatisticsSection() {
   const sectionRef = useRef(null);
 
   const stats = [
-    { value: 3000, suffix: "", label: "Students Enrolled" },
+    { value: 3000, suffix: "+", label: "Students Enrolled" },
     { value: 50000, suffix: "+", label: "Practice Quizzes" },
     { value: 10, suffix: "x", label: "Faster Exam Prep" },
     { value: 92, suffix: "%", label: "Exam Success Rate" },

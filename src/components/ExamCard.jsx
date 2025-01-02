@@ -14,21 +14,21 @@ export default function ExamCard() {
         "Assist students in getting ready for the West African examinations by providing practice questions and tracking their performance.",
       image: "/image19.png",
     },
-    {
-      id: 3,
-      title: "Quiz Test",
-      description:
-        "The Quiz Test is a fun tool that boosts learning and confidence by providing instant feedback on knowledge assessment.",
-      image: "/image23.png",
-    },
+    // {
+    //   id: 3,
+    //   title: "Quiz Test",
+    //   description:
+    //     "The Quiz Test is a fun tool that boosts learning and confidence by providing instant feedback on knowledge assessment.",
+    //   image: "/image23.png",
+    // },
   ];
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.7fr_1.5fr] gap-8'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.5fr] gap-8'>
       {tests.map((test) => (
         <div
           key={test.id}
-          className='group relative bg-neutral-white-40 p-6 rounded-2xl'
+          className='group relative bg-neutral-white-40 p-6 md:p-10 rounded-2xl'
         >
           <div className='aspect-[4/2] mb-4 overflow-hidden rounded-xl'>
             <img
