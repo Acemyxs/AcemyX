@@ -40,7 +40,7 @@ export default function ExamCard() {
           <div className='flex justify-between items-start gap-6'>
             <div>
               <h3 className='text-xl font-semibold mb-2'>{test.title}</h3>
-              <p className='text-neutral-black-40 text-sm'>{test.description}</p>
+              {/* <p className='text-neutral-black-40 text-sm'>{test.description}</p> */}
             </div>
             <button className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
               <svg

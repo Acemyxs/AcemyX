@@ -5,10 +5,10 @@ export default function CTASection() {
   return (
     <section className='w-[90%] md:w-[80%] mx-auto py-16 md:py-24'>
       <div className='text-center mx-auto'>
-        <h2 className='text-[24px] sm:text-[32px] font-bold max-w-[35ch] sm:max-w-[30ch] mx-auto mb-4 md:mb-6'>
-          Discover your abilities with the AcemyX Academic Platform!
+        <h2 className='text-[24px] sm:text-[32px] font-bold  mx-auto mb-4 md:mb-6'>
+          Accelerate Your Success with AcemyX
         </h2>
-        <p className='text-[14px] sm:text-[16px] w-full sm:w-[60ch] md:w-[75ch] font-medium mx-auto text-center mb-8 md:mb-12 text-neutral-black-10'>
+        <p className='text-[12px] sm:text-[16px] w-[34ch] md:w-[50ch] font-medium mx-auto text-center mb-8 md:mb-12 text-neutral-black-10'>
           With AcemyX, you’re not just preparing for exams—you’re building the
           skills and confidence to succeed in life. Let’s start your journey to
           success together.

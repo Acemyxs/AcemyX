@@ -30,9 +30,9 @@ export default function FooterCopy() {
                 />
               </a>
               <p className='text-primary-10 text-[14px] md:text-[16] max-w-96 '>
-                Acemyx ensures every student has access to top-quality learning
-                materials, expert mentorships and a supportive community to
-                excel in WAEC, and UTME exams.
+                AcemyX is more than exam prep—it’s your partner in building
+                confidence, mastering knowledge, and unlocking opportunities for
+                a brighter future.
               </p>
             </div>
 

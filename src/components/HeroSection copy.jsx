@@ -34,7 +34,7 @@ export default function HeroSection() {
         <span className='text-primary'>Exams</span>
       </span>,
       <span key='line3'>
-        with <span className='text-primary'>Acemy-X</span>
+        with <span className='text-primary'>AcemyX</span>
       </span>,
     ],
   ];

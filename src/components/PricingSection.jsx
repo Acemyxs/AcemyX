@@ -7,9 +7,9 @@ export default function PricingSection() {
       <div className='grid gap-8 md:grid-cols-3 max-w-6xl mx-auto p-4'>
         {/* Free Tier */}
         <div className='rounded-2xl p-6 bg-white shadow-sm'>
-          <h2 className='font-semibold text-xl'>Free</h2>
+          <h2 className='font-semibold text-xl'>Free Plan</h2>
           <p className='text-gray-700 mt-2 text-sm text-[12px]'>
-            Experience the platform risk-free and discover its potential.
+            Experience AcemyX at No Cost
           </p>
           <div className='my-3'>
             <span className='text-[#80e5b1] text-4xl font-medium'>FREE</span>
@@ -17,7 +17,7 @@ export default function PricingSection() {
           </div>
           <div className='h-[1px] bg-gray-200 mb-4'></div>
 
-          <ul className='space-y-4 mb-8'>
+          <ul className='space-y-4 mb-8 text-[12px] font-medium'>
             <li className='flex items-center gap-2'>
               <svg
                 className='w-5 h-5 text-[#80e5b1]'
@@ -32,7 +32,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Limited Access to Resources</span>
+              <span>Limited access to explore the platform.</span>
             </li>
             <li className='flex items-center gap-2'>
               <svg
@@ -48,7 +48,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>4-day free trial</span>
+              <span>No commitment, risk-free trial.</span>
             </li>
             <li className='flex items-center gap-2 invisible opacity-0'>
               <svg
@@ -64,7 +64,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>4-day free trial</span>
+              <span>Comprehensive mock tests and progress tracking.</span>
             </li>
           </ul>
           <button className='w-full py-3 px-4 rounded-xl bg-[#80e5b1] text-white font-medium hover:bg-[#3dc871] transition-colors'>
@@ -76,8 +76,7 @@ export default function PricingSection() {
         <div className='rounded-2xl p-6 bg-white shadow-sm'>
           <h2 className='font-semibold text-xl'>Basic</h2>
           <p className='text-gray-700 mt-2 text-sm text-[12px]'>
-            Get the essentials: unlimited questions and core resources at an
-            affordable price.
+            Unlock Full Access to Your Course
           </p>
           <div className='my-3'>
             <span className='text-4xl font-medium'>N500</span>
@@ -85,7 +84,7 @@ export default function PricingSection() {
           </div>
           <div className='h-[1px] bg-gray-200 mb-4'></div>
 
-          <ul className='space-y-4 mb-8'>
+          <ul className='space-y-4 mb-8 text-[12px] font-medium'>
             <li className='flex items-center gap-2'>
               <svg
                 className='w-5 h-5 text-[#80e5b1]'
@@ -100,7 +99,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Unlimited Questions</span>
+              <span>Unlimited questions and study notes.</span>
             </li>
             <li className='flex items-center gap-2'>
               <svg
@@ -116,7 +115,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Limited Study Notes</span>
+              <span>Access to Socratic AI tutor.</span>
             </li>
             <li className='flex items-center gap-2'>
               <svg
@@ -132,7 +131,7 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Active Peer Forum</span>
+              <span>Comprehensive mock tests and progress tracking.</span>
             </li>
           </ul>
           <button className='w-full py-3 px-4 rounded-xl bg-black text-white font-medium hover:bg-opacity-[0.8] transition-all'>
@@ -144,8 +143,7 @@ export default function PricingSection() {
         <div className='rounded-2xl p-6 bg-white'>
           <h2 className='font-semibold text-xl'>Standard</h2>
           <p className='text-gray-700 mt-2 text-sm text-[12px]'>
-            Unlock your full learning potential with premium features and expert
-            support.
+            Enjoy the same full access with a 20% discount when paid upfront.
           </p>
           <div className='my-3'>
             <span className='text-4xl font-medium'>N1200</span>
@@ -153,10 +151,10 @@ export default function PricingSection() {
           </div>
           <div className='h-[1px] bg-gray-200 mb-4'></div>
 
-          <ul className='space-y-4 mb-8'>
+          <ul className='space-y-4 mb-8 text-[12px] font-medium'>
             <li className='flex items-center gap-2'>
               <svg
-                className='w-5 h-5 text-[#80e5b1]'
+                className='w-10 h-10 text-[#80e5b1]'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -168,7 +166,10 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Full Study Notes</span>
+              <span>
+                Unlimited questions, study notes, AI tutor, mock tests, progress
+                tracking, peer forums, and more.
+              </span>
             </li>
             <li className='flex items-center gap-2'>
               <svg
@@ -186,9 +187,9 @@ export default function PricingSection() {
               </svg>
               <span>Premium Socrates AI</span>
             </li>
-            <li className='flex items-center gap-2'>
+            {/* <li className='flex items-center gap-2 invisible opacity-0'>
               <svg
-                className='w-5 h-5 text-[#4ADE80]'
+                className='w-5 h-5 text-[#80e5b1]'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -200,8 +201,8 @@ export default function PricingSection() {
                   d='M5 13l4 4L19 7'
                 />
               </svg>
-              <span>Basic Features</span>
-            </li>
+              <span>free.</span>
+            </li> */}
           </ul>
           <button className='w-full py-3 px-4 rounded-xl bg-black text-white font-medium hover:bg-opacity-[0.8] transition-all'>
             Get Started

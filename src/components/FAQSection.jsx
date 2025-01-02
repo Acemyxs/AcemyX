@@ -10,32 +10,32 @@ export default function FAQSection() {
         id: "signup",
         question: "How do I sign up for AcemyX",
         answer:
-          'Signing up is easy! Visit our website, click on the "Sign Up" button, and fill in your details. Once registered, you can explore the platform and start your learning journey.',
+          "AcemyX is an online platform that helps learners prepare for university admission exams and other academic or professional assessments using personalized tools, curated resources, and self-paced learning..",
       },
       {
         id: "subjects",
-        question: "What subjects are available on the platform?",
+        question: "How does AcemyX work?",
         answer:
           "We offer a wide range of subjects across different disciplines.",
       },
       {
         id: "moodle",
-        question: "How do practice tests on Moodle work?",
+        question: "What unique services does AcemyX offer?",
         answer:
-          "Our practice tests are designed to help you assess your knowledge.",
+          "AcemyX offers a personalized learning experience with AI assistance, a vast question bank with detailed explanations, and access to premium features such as one-on-one mentorship and live coaching sessions based on request.",
       },
     ],
     services: [],
   };
 
   return (
-    <section className="w-[80%] mx-auto py-24">
-      <h2 className="text-3xl font-semibold text-center mb-8">
+    <section className='w-[80%] md:w-[80%] mx-auto py-24'>
+      <h2 className='text-3xl font-semibold text-center mb-8'>
         Frequently Asked Questions
       </h2>
 
       {/* Tabs */}
-      <div className="flex gap-4 mb-8">
+      <div className='flex gap-4 mb-8'>
         <button
           onClick={() => setActiveTab("general")}
           className={`px-6 py-2 rounded-full text-sm font-medium transition-colors
@@ -61,34 +61,34 @@ export default function FAQSection() {
       </div>
 
       {/* FAQ Items */}
-      <div className="space-y-4">
+      <div className='space-y-4'>
         {faqs[activeTab].map((faq) => (
-          <div key={faq.id} className="border-b border-gray-100 pb-4">
+          <div key={faq.id} className='border-b border-gray-100 pb-4'>
             <button
               onClick={() =>
                 setOpenQuestion(openQuestion === faq.id ? "" : faq.id)
               }
-              className="flex justify-between items-center w-full text-left py-2 text-gray-900"
+              className='flex justify-between items-center w-full text-left py-2 text-gray-900'
             >
-              <h4 className="font-medium max-w-[90%]">{faq.question}</h4>
+              <h4 className='font-medium max-w-[90%]'>{faq.question}</h4>
               <svg
                 className={`w-5 h-5 transform transition-transform ${
                   openQuestion === faq.id ? "rotate-180" : ""
                 }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
+                  d='M19 9l-7 7-7-7'
                 />
               </svg>
             </button>
             {openQuestion === faq.id && (
-              <div className="mt-2 text-gray-600 text-sm max-w-[90%]">
+              <div className='mt-2 text-gray-600 text-sm max-w-[90%]'>
                 {faq.answer}
               </div>
             )}
