@@ -1,4 +1,4 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection copy";
 import Header from "../components/Header";
 import StatisticsSection from "../components/StatisticsSection";
 import FeaturesSection from "../components/FeaturesSection";
@@ -15,7 +15,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <HeroSection />
+      <HeroSection Copy />
+
       <StatisticsSection />
       <FeaturesSection />
       <PracticeSection />

@@ -6,10 +6,10 @@ export default function StatisticsSection() {
   const sectionRef = useRef(null);
 
   const stats = [
-    { value: 3, suffix: "k", label: "Students Enrolled" },
-    { value: 500, suffix: "+", label: "Practice Quizzes & Exams" },
-    { value: 300, suffix: "k", label: "Curated Questions" },
-    { value: 99.9, suffix: "%", label: "Success Rate" },
+    { value: 3000, suffix: "", label: "Students Enrolled" },
+    { value: 50000, suffix: "+", label: "Practice Quizzes" },
+    { value: 10, suffix: "x", label: "Faster Exam Prep" },
+    { value: 92, suffix: "%", label: "Exam Success Rate" },
   ];
 
   useEffect(() => {
@@ -48,7 +48,9 @@ export default function StatisticsSection() {
               preserveValue={false}
               key={isVisible ? 1 : 0}
             />
-            <p className='font-medium text-center'>{stat.label}</p>
+            <p className=' text-[14px] md:text-base font-medium text-center'>
+              {stat.label}
+            </p>
           </div>
         ))}
       </div>

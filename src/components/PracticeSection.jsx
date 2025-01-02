@@ -8,11 +8,11 @@ export default function PracticeSection() {
     <section className='max-w-[80%] mx-auto py-32'>
       <div>
         <h2 className='text-2xl lg:text-4xl md:text-3xl font-bold text-center max-w-[25ch] mx-auto mb-6'>
-          Practice for your Exam with real test similation
+          Practice Smarter with Real Exam Simulations
         </h2>
         <p className='max-w-[50ch] font-medium mx-auto text-center mb-12 text-neutral-black-10 lg:w-[75]'>
-          Use practice tests to get ready for real exams. Get instant feedback,
-          monitor your progress, and work on improving, all through AcemyX
+          Prepare for real exams with practice tests that deliver instant
+          feedback, track your progress, and help you improve—all with AcemyX.
         </p>
       </div>
       <div className='mx-auto bg-neutral-white-40 w-fit p-2 rounded-full mb-12'>

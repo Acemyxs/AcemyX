@@ -31,7 +31,7 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials() {
+export default function  Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideInterval = useRef(null);
 
