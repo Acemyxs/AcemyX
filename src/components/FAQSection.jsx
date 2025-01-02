@@ -5,18 +5,18 @@ export default function FAQSection() {
   const [openQuestion, setOpenQuestion] = useState("signup");
 
   const faqs = {
-    general: [
+    services: [
+      {
+        id: "Acemyx",
+        question: "What is AcemyX?",
+        answer:
+          "AcemyX is a digital learning platform designed to help students prepare for their WAEC, NECO, and UTME exams. We provide a comprehensive range of resources, including a question bank, video lectures, study notes, practice problems, live mentoring sessions, and AI assistance.",
+      },
       {
         id: "signup",
         question: "How do I sign up for AcemyX",
         answer:
-          "AcemyX is an online platform that helps learners prepare for university admission exams and other academic or professional assessments using personalized tools, curated resources, and self-paced learning..",
-      },
-      {
-        id: "subjects",
-        question: "How does AcemyX work?",
-        answer:
-          "We offer a wide range of subjects across different disciplines.",
+          'To sign up for AcemyX, visit our website and click on the "Sign up" button. You will be guided through the registration process, where you can create an account and access all our resources.',
       },
       {
         id: "moodle",
@@ -25,11 +25,36 @@ export default function FAQSection() {
           "AcemyX offers a personalized learning experience with AI assistance, a vast question bank with detailed explanations, and access to premium features such as one-on-one mentorship and live coaching sessions based on request.",
       },
     ],
-    services: [],
+    general: [
+      {
+        id: "signup",
+        question: "What is UTME?",
+        answer:
+          "The Unified Tertiary Matriculation Examination (UTME) is an entrance examination for prospective undergraduates in Nigeria. It is conducted by the Joint Admissions and Matriculation Board (JAMB) and is required for admission into Nigerian universities.",
+      },
+      {
+        id: "waec",
+        question: "What is WAEC?",
+        answer:
+          "The West African Examinations Council (WAEC) is an examination board that conducts the West African Senior School Certificate Examination (WASSCE) for high school students in West African countries. The exam assesses students’ readiness for tertiary education.",
+      },
+      {
+        id: "neco",
+        question: "What is NECO?",
+        answer:
+          "The National Examinations Council (NECO) conducts the Senior Secondary Certificate Examination (SSCE) for secondary school students in Nigeria. It is an alternative to the WAEC exam and is recognized by Nigerian universities.",
+      },
+      {
+        id: "gen",
+        question: "How often are UTME, WAEC and NECO exams conducted?",
+        answer:
+          "UTME is usually conducted once a year, while WAEC and NECO have two sessions annually - the May/June session and the Nov/Dec session.",
+      },
+    ],
   };
 
   return (
-    <section className='w-[80%] md:w-[80%] mx-auto py-24'>
+    <section className='w-[80%] md:w-[60%] mx-auto py-24'>
       <h2 className='text-3xl font-semibold text-center mb-8'>
         Frequently Asked Questions
       </h2>
