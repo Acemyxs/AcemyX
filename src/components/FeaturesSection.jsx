@@ -9,6 +9,10 @@ export default function FeaturesSection() {
 
       <p className='text-[14px] sm:text-[14px] w-[30ch] sm:w-[50ch]  font-medium md:mx-auto md:text-center mb-8 md:mb-12 text-gray-500 mx-auto text-center'>
         Access everything you need to ace your exams in one place.
+      <p className='text-[12px] sm:text-[12px] w-full md:w-[75ch] font-medium md:mx-auto md:text-center mb-8 md:mb-12 text-gray-500 mx-auto text-center'>
+        Get study materials whenever you need them. An AI tool that helps you
+        think critically and practice with over 50,000 questions that mimic real
+        exams.
       </p>
       <div className='grid items-center justify-center'>
         <FeatureCards />
