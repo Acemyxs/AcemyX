@@ -142,6 +142,14 @@ export default function FooterCopy() {
               <img src='ln.svg' alt='' className='w-4 h-4' />
               <span className='text-sm'>LinkedIn</span>
             </button>
+            <a
+              href='https://www.tiktok.com/@acemyx.com?_t=8shW7yv3sUo&_r=1'
+              target='_blank'
+              className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
+            >
+              <img src='tiktok.svg' alt='' className='w-6 h-6' />
+              <span className='text-xsm md:text-lg'>Tiktok</span>
+            </a>
           </div>
 
           {/* Stay Connected Section */}

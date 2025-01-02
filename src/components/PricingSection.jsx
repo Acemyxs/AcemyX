@@ -52,12 +52,13 @@ export default function PricingSection() {
       {
         title: "Enterprise Plan",
         description: "Tailored Solutions for Institutions",
-        price: "Custom Pricing",
+        price: "Custom",
+        period: " Pricing",
         features: [
-          "Custom pricing for institutions.",
+          "Every feature On Standard Plan and more.",
           "Scaled access for students.",
           " Dedicated sales team support.",
-          "Premium Socrates AI access",
+          { text: "", hideCheckmark: true },
         ],
         buttonText: "Contact Sales for Details",
         buttonStyle: "bg-black hover:bg-opacity-[0.8]",
@@ -107,9 +108,13 @@ export default function PricingSection() {
             </p>
             <div className='my-3'>
               <span
-                className={`text-4xl font-medium ${
-                  plan.title === "Free Plan" ? "text-[#80e5b1]" : ""
-                }`}
+                className={`${
+                  plan.title === "Free Plan"
+                    ? "text-[#80e5b1] text-3xl"
+                    : plan.title === "Enterprise Plan"
+                    ? "text-xl"
+                    : "text-xl"
+                } font-medium my-6`}
               >
                 {plan.price}
               </span>
@@ -143,11 +148,19 @@ export default function PricingSection() {
                 </li>
               ))}
             </ul>
-            <button
-              className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle}`}
-            >
-              {plan.buttonText}
-            </button>
+            {planType === "enterprise" ? (
+              <button
+                className={`w-full py-2.5 md:py-3 px-3 md:px-4 rounded-xl text-white font-medium transition-all text-[12px] md:text-[14px] whitespace-nowrap ${plan.buttonStyle}`}
+              >
+                Contact Sales for Details
+              </button>
+            ) : (
+              <button
+                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle}`}
+              >
+                {plan.buttonText}
+              </button>
+            )}
           </div>
         ))}
       </div>
