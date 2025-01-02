@@ -10,19 +10,19 @@ function PromotionalSection() {
             </p>
           </div>
           <div className='grid grid-cols-2 gap-6'>
-            <div className='bg-text-color text-neutral-white-10 px-10 py-6 rounded-[48px]'>
-              <p className='text-[16px] md:text-[24px] font-medium mb-2'>
+            <div className='bg-text-color text-neutral-white-10 p-6  md:px-10 md:py-6 rounded-[48px]'>
+              <p className='text-[14px] md:text-[24px] font-medium mb-2'>
                 Boost Exam <br /> Confidence
               </p>
               <p className=' md:text-3xl mt-8'>
                 <span className='font-semibold text-2xl md:text-3xl '>30%</span>{" "}
-                <span className='text-[16px] md:text-[24px]'>Higher</span>
+                <span className='text-[12px] md:text-[24px]'>Higher</span>
               </p>
             </div>
 
-            <div className='bg-neutral-white-60 px-10 py-6  rounded-[48px]'>
-              <p className='text-[16px] md:text-[24px] font-medium mb-2'>
-                Boost Your Scores <br /> by an Average of 50 <br /> Points
+            <div className='bg-neutral-white-60 md:px-10 md:py-6  p-6 rounded-[48px]'>
+              <p className=' text-[14px] lg:w-[16ch] md:text-[24px] font-medium mb-2'>
+                Boost Your Scores by an Average of 50 Points
               </p>
             </div>
           </div>
