@@ -7,13 +7,13 @@ export default function FAQSection() {
   const faqs = {
     services: [
       {
-        id: "Acemyx",
+        id: "sign up",
         question: "What is AcemyX?",
         answer:
           "AcemyX is a digital learning platform designed to help students prepare for their WAEC, NECO, and UTME exams. We provide a comprehensive range of resources, including a question bank, video lectures, study notes, practice problems, live mentoring sessions, and AI assistance.",
       },
       {
-        id: "signup",
+        id: "Acemyx",
         question: "How do I sign up for AcemyX",
         answer:
           'To sign up for AcemyX, visit our website and click on the "Sign up" button. You will be guided through the registration process, where you can create an account and access all our resources.',
