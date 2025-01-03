@@ -10,6 +10,7 @@ export default function FooterCopy() {
 
   // Construct the WhatsApp URL
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  const currentYear = new Date().getFullYear();
 
   return (
     <section className='bg-text-color text-neutral-white-15'>
@@ -138,10 +139,13 @@ export default function FooterCopy() {
               <span className='text-xsm md:text-lg'>Facebook</span>
             </a>
 
-            <button className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'>
+            <a
+              href='https://www.linkedin.com/company/acemyx/'
+              className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
+            >
               <img src='ln.svg' alt='' className='w-4 h-4' />
               <span className='text-sm'>LinkedIn</span>
-            </button>
+            </a>
             <a
               href='https://www.tiktok.com/@acemyx.com?_t=8shW7yv3sUo&_r=1'
               target='_blank'
@@ -191,8 +195,8 @@ export default function FooterCopy() {
           </div>
         </div>
       </div>
-      <div className='py-8 mb text-center text-gray-400 text-sm mx-auto mt-20'>
-        <p>© All Rights Reserved 2024 Acemyx</p>
+      <div className='py-8 text-center text-gray-400 text-sm mx-auto mt-20 border-t border-gray-800'>
+        <p>© {currentYear}, AcemyX Global Limited. All Rights Reserved.</p>
       </div>
     </section>
   );
