@@ -14,6 +14,7 @@ export default function PricingSection() {
           "Limited access to explore the platform.",
           "No commitment, risk-free trial.",
           { text: "", hideCheckmark: true },
+          // { text: "", hideCheckmark: true },
           // "Basic Socrates AI access
           // "Basic Socrates AI access",
         ],
@@ -26,9 +27,9 @@ export default function PricingSection() {
         price: "N500",
         period: "/month",
         features: [
-          "Unlimited questions and study notes.",
-          "Access to Socratic AI tutor.",
-          "Comprehensive mock tests and progress tracking.",
+          "Unlimited Practice Questions, Quizzes, & Mock Exams",
+          "Self-Paced Study Notes & Collaborative Peer Forum",
+          "Socratic AI Tutor & Progress Leaderboard",
         ],
         buttonText: "Get Started",
         buttonStyle: "bg-black hover:bg-opacity-[0.8]",
@@ -40,9 +41,9 @@ export default function PricingSection() {
         price: "N1200",
         period: "/3 months",
         features: [
-          "Unlimited questions, study notes, AI tutor.",
-          "Mock tests, progress tracking.",
-          "Premium Socrates AI",
+          "Unlimited Practice Questions, Quizzes, & Mock Exams",
+          "Self-Paced Study Notes & Collaborative Peer Forum",
+          "Socratic AI Tutor & Progress Leaderboard",
         ],
         buttonText: "Get Started",
         buttonStyle: "bg-black hover:bg-opacity-[0.8]",

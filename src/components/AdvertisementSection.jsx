@@ -1,7 +1,7 @@
 function PromotionalSection() {
   return (
     <section className='w-[80%] mx-auto py-32'>
-      <div className='grid [750px]:grid-cols-2 md:grid-cols-2 gap-8'>
+      <div className='grid [750px]:grid-cols-1 lg:grid-cols-2 gap-8 [805]:grid-cols-2'>
         <div className='grid gap-6 grid-rows-[1.5fr_1fr]'>
           <div className='bg-neutral-white-60 px-6 py-10 rounded-[48px]'>
             <p className='text-xl font-medium md:w-[30ch] mx-auto'>
