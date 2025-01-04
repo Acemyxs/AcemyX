@@ -123,7 +123,8 @@ export default function FooterCopy() {
           {/* Social Media Links */}
           <div className='flex flex-wrap gap-4 mb-8'>
             <a
-              href=''
+              href='https://www.instagram.com/acemyx/?igsh=amVxejd0Y29iYXM5#'
+              target='_blank'
               className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
             >
               <img src='instagram.svg' alt='' className='w-6 h-6' />
@@ -141,6 +142,7 @@ export default function FooterCopy() {
 
             <a
               href='https://www.linkedin.com/company/acemyx/'
+              target='_blank'
               className='flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-gray-800 hover:border-gray-600 transition-colors'
             >
               <img src='ln.svg' alt='' className='w-4 h-4' />
@@ -195,7 +197,7 @@ export default function FooterCopy() {
           </div>
         </div>
       </div>
-      <div className='py-8 text-center text-gray-400 text-sm mx-auto mt-20 border-t border-gray-800'>
+      <div className='py-8 text-center text-gray-400 text-sm mx-auto mt-25'>
         <p>© {currentYear}, AcemyX Global Limited. All Rights Reserved.</p>
       </div>
     </section>

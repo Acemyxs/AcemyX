@@ -3,6 +3,12 @@ import { useState } from "react";
 export default function PricingSection() {
   const [planType, setPlanType] = useState("individual");
 
+  const phoneNumber = "2348143050414";
+  const message = encodeURIComponent(
+    "Hello! I will like to know more about AcemyX Enterprise solutions."
+  );
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const pricingData = {
     individual: [
       {
@@ -58,11 +64,12 @@ export default function PricingSection() {
         features: [
           "Every feature On Standard Plan and more.",
           "Scaled access for students.",
-          " Dedicated sales team support.",
+          "Dedicated sales team support.",
           { text: "", hideCheckmark: true },
         ],
         buttonText: "Contact Sales for Details",
         buttonStyle: "bg-black hover:bg-opacity-[0.8]",
+        link: whatsappUrl,
       },
     ],
   };
@@ -70,7 +77,7 @@ export default function PricingSection() {
   return (
     <section id='pricing' className='py-24 w-[80%] mx-auto'>
       <h1 className='text-3xl font-semibold text-center mb-12'>
-        Affordable Plans for every learner
+        Choose the Right Plan for You
       </h1>
 
       <div className='mx-auto bg-neutral-white-40 w-fit p-2 rounded-full mb-12'>
@@ -150,17 +157,23 @@ export default function PricingSection() {
               ))}
             </ul>
             {planType === "enterprise" ? (
-              <button
-                className={`w-full py-2.5 md:py-3 px-3 md:px-4 rounded-xl text-white font-medium transition-all text-[12px] md:text-[14px] whitespace-nowrap ${plan.buttonStyle}`}
-              >
-                Contact Sales for Details
-              </button>
-            ) : (
-              <button
-                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle}`}
+              <a
+                href={whatsappUrl}
+                target='_blank'
+                rel='noopener noreferrer'
+                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all text-center inline-block ${plan.buttonStyle}`}
               >
                 {plan.buttonText}
-              </button>
+              </a>
+            ) : (
+              <a
+                href='https://academy.acemyx.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle} inline-block text-center`}
+              >
+                {plan.buttonText}
+              </a>
             )}
           </div>
         ))}
