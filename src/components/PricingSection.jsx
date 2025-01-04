@@ -3,11 +3,11 @@ import { useState } from "react";
 export default function PricingSection() {
   const [planType, setPlanType] = useState("individual");
 
-  const phoneNumber = "2348143050414";
-  const message = encodeURIComponent(
-    "Hello! I will like to know more about AcemyX Enterprise solutions."
-  );
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  // const phoneNumber = "2348143050414";
+  // const message = encodeURIComponent(
+  //   "Hello! I will like to know more about AcemyX Enterprise solutions."
+  // );
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   const pricingData = {
     individual: [
@@ -158,7 +158,7 @@ export default function PricingSection() {
             </ul>
             {planType === "enterprise" ? (
               <a
-                href={whatsappUrl}
+                href='mailto:contact@acemyx.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all text-center inline-block ${plan.buttonStyle}`}

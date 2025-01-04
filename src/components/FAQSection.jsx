@@ -189,7 +189,7 @@ export default function FAQSection() {
           }}
           className={`px-6 py-3 rounded-full font-semibold transition-colors ${
             activeTab === "services"
-              ? "bg-neutral-white-10 text-primary"
+              ? "bg-neutral-white-10 "
               : "text-gray-600 hover:text-gray-800"
           }`}
         >
@@ -203,7 +203,7 @@ export default function FAQSection() {
           }}
           className={`px-6 py-3 rounded-full font-semibold transition-colors ${
             activeTab === "general"
-              ? "bg-neutral-white-10 text-primary"
+              ? "bg-neutral-white-10 "
               : "text-gray-600 hover:text-gray-800"
           }`}
         >
