@@ -2,7 +2,11 @@ import { useState, useEffect, useRef } from "react";
 
 export default function ExamCard() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startPos, setStartPos] = useState(0);
+  const [currentTranslate, setCurrentTranslate] = useState(0);
   const slideInterval = useRef(null);
+  const dragRef = useRef(null);
   const isMobile = window.innerWidth < 768;
 
   const tests = [
@@ -28,6 +32,39 @@ export default function ExamCard() {
     //   image: "/image23.png",
     // },
   ];
+  const handleDragStart = (e) => {
+    setIsDragging(true);
+    setStartPos(e.touches ? e.touches[0].clientX : e.clientX);
+    if (slideInterval.current) {
+      clearInterval(slideInterval.current);
+    }
+  };
+
+  const handleDragMove = (e) => {
+    if (!isDragging) return;
+    const currentPosition = e.touches ? e.touches[0].clientX : e.clientX;
+    const diff = currentPosition - startPos;
+    setCurrentTranslate(diff);
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    const movedBy = currentTranslate;
+
+    if (Math.abs(movedBy) > 100) {
+      if (movedBy > 0 && currentSlide > 0) {
+        setCurrentSlide(currentSlide - 1);
+      } else if (movedBy < 0 && currentSlide < tests.length - 1) {
+        setCurrentSlide(currentSlide + 1);
+      }
+    }
+    setCurrentTranslate(0);
+
+    // Restart interval
+    if (isMobile) {
+      slideInterval.current = setInterval(nextSlide, 5000);
+    }
+  };
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % tests.length);
@@ -43,11 +80,19 @@ export default function ExamCard() {
   return (
     <div className='relative'>
       <div
+        ref={dragRef}
         className={`${
           isMobile
             ? "flex overflow-hidden"
             : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1.5fr] gap-8"
         }`}
+        onTouchStart={handleDragStart}
+        onTouchMove={handleDragMove}
+        onTouchEnd={handleDragEnd}
+        onMouseDown={handleDragStart}
+        onMouseMove={handleDragMove}
+        onMouseUp={handleDragEnd}
+        onMouseLeave={handleDragEnd}
       >
         {tests.map((test) => (
           <div
@@ -59,7 +104,12 @@ export default function ExamCard() {
             }`}
             style={
               isMobile
-                ? { transform: `translateX(-${currentSlide * 100}%)` }
+                ? {
+                    transform: `translateX(calc(-${
+                      currentSlide * 100
+                    }% + ${currentTranslate}px))`,
+                    cursor: isDragging ? "grabbing" : "grab",
+                  }
                 : {}
             }
           >
