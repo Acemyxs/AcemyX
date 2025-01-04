@@ -41,9 +41,45 @@ export default function SubjectCard() {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startPos, setStartPos] = useState(0);
+  const [currentTranslate, setCurrentTranslate] = useState(0);
   const slideInterval = useRef(null);
+  const dragRef = useRef(null);
   const slidesPerView = window.innerWidth >= 768 ? 2 : 1;
   const totalSlides = Math.ceil(subjects.length / slidesPerView);
+
+  const handleDragStart = (e) => {
+    setIsDragging(true);
+    setStartPos(e.touches ? e.touches[0].clientX : e.clientX);
+    if (slideInterval.current) {
+      clearInterval(slideInterval.current);
+    }
+  };
+
+  const handleDragMove = (e) => {
+    if (!isDragging) return;
+    const currentPosition = e.touches ? e.touches[0].clientX : e.clientX;
+    const diff = currentPosition - startPos;
+    setCurrentTranslate(diff);
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    const movedBy = currentTranslate;
+
+    if (Math.abs(movedBy) > 100) {
+      if (movedBy > 0 && currentSlide > 0) {
+        setCurrentSlide(currentSlide - 1);
+      } else if (movedBy < 0 && currentSlide < totalSlides - 1) {
+        setCurrentSlide(currentSlide + 1);
+      }
+    }
+    setCurrentTranslate(0);
+    slideInterval.current = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 5000);
+  };
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -61,8 +97,21 @@ export default function SubjectCard() {
   return (
     <div className='relative overflow-hidden px-4 md:px-8'>
       <div
+        ref={dragRef}
         className='flex transition-transform duration-500 ease-in-out'
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        style={{
+          transform: `translateX(calc(-${
+            currentSlide * 100
+          }% + ${currentTranslate}px))`,
+          cursor: isDragging ? "grabbing" : "grab",
+        }}
+        onTouchStart={handleDragStart}
+        onTouchMove={handleDragMove}
+        onTouchEnd={handleDragEnd}
+        onMouseDown={handleDragStart}
+        onMouseMove={handleDragMove}
+        onMouseUp={handleDragEnd}
+        onMouseLeave={handleDragEnd}
       >
         {subjects.map((subject) => (
           <div
