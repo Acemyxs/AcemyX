@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ExamCard from "./ExamCard";
+import SubjectCard from "./subjectCard";
 
 export default function PracticeSection() {
   const [practice, setPractice] = useState("general");
@@ -33,7 +34,7 @@ export default function PracticeSection() {
           Subject
         </button>
       </div>
-      {<ExamCard />}
+      {practice === "general" ? <ExamCard /> : <SubjectCard />}
     </section>
   );
 }

@@ -17,7 +17,7 @@ export default function CTASection() {
 
       <div className='flex justify-center mt-4 mb-8'>
         <ButtonCta className='py-1.5 px-3 md:py-2.5 md:px-5 text-sm md:text-base font-medium'>
-          <a href='https://academy.acemyx.com/'>Get Access Now!</a>
+          <a href='https://academy.acemyx.com/'>Get Access Now</a>
         </ButtonCta>
       </div>
 

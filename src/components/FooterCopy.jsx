@@ -17,7 +17,7 @@ export default function FooterCopy() {
       <div className='py-8 grid grid-cols-1 lg:grid-cols-[2fr_1fr]   gap-8 items-start justify-center mx-auto md:px-8 md:pt-20 '>
         <div className='container mx-auto px-4'>
           <h1 className='text-[24px] md:text-[36px] lg:text-[40px] font-semibold mb-12 md:mb-[102px] text-primary-10'>
-            Ready to transform your Learning?
+            Ready to Transform Your Learning?
           </h1>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>

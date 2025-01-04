@@ -69,7 +69,7 @@ export default function PricingSection() {
         ],
         buttonText: "Contact Sales for Details",
         buttonStyle: "bg-black hover:bg-opacity-[0.8]",
-        link: whatsappUrl,
+        link: "contact@acemyx.com",
       },
     ],
   };
