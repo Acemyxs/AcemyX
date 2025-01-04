@@ -6,7 +6,7 @@ export default function PracticeSection() {
   const [practice, setPractice] = useState("general");
 
   return (
-    <section className='max-w-[80%] mx-auto py-32'>
+    <section className='max-w-[80%] mx-auto py-24'>
       <div>
         <h2 className='text-2xl lg:text-4xl md:text-3xl font-bold text-center max-w-[25ch] mx-auto mb-6'>
           Practice Smarter with Real Exam Simulations
