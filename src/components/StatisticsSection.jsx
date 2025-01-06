@@ -37,7 +37,7 @@ export default function StatisticsSection() {
         {stats.map((stat, index) => (
           <div key={index} className='flex flex-col items-center'>
             <CountUp
-              className='text-[24px] sm:text-[32px] lg:text-5xl mb-2 font-bold'
+              className='text-header_4 md:text-header_2 mb-2 font-semibold'
               start={0}
               end={stat.value}
               suffix={stat.suffix}

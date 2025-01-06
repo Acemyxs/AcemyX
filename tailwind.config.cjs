@@ -82,7 +82,7 @@ module.exports = {
 
         //Headline
         title_1: [
-          "10px",
+          "24px",
           {
             lineHeight: "140%",
           },
