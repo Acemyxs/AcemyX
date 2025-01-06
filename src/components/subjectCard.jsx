@@ -7,36 +7,42 @@ export default function SubjectCard() {
       title: "Mathematics",
       image: "/mathematics.png",
       type: "Core",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=31",
     },
     {
       id: 2,
       title: "English Language",
       image: "/english.png",
       type: "Core",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=33",
     },
     {
       id: 3,
       title: "Physics",
       image: "/physics.png",
       type: "Science",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=27",
     },
     {
       id: 4,
       title: "Chemistry",
       image: "/chemistry.png",
       type: "Science",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=47",
     },
     {
       id: 5,
       title: "Biology",
       image: "/biology.png",
       type: "Science",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=46",
     },
     {
       id: 6,
       title: "Literature",
       image: "/literature.png",
       type: "Arts",
+      link: "https://academy.acemyx.com/enrol/index.php?id=42",
     },
   ];
 

@@ -75,12 +75,12 @@ export default function PricingSection() {
   };
 
   return (
-    <section id='pricing' className='py-24 w-[80%] mx-auto'>
-      <h1 className='text-3xl font-semibold text-center mb-12'>
+    <section id="pricing" className="py-24 w-[80%] mx-auto">
+      <h1 className="text-3xl font-semibold text-center mb-12">
         Choose the Right Plan for You
       </h1>
 
-      <div className='mx-auto bg-neutral-white-40 w-fit p-2 rounded-full mb-12'>
+      <div className="mx-auto bg-neutral-white-40 w-fit p-2 rounded-full mb-12">
         <button
           onClick={() => setPlanType("individual")}
           className={`px-6 py-3 rounded-full font-semibold transition-colors ${
@@ -109,68 +109,73 @@ export default function PricingSection() {
         }`}
       >
         {pricingData[planType].map((plan, index) => (
-          <div key={index} className='rounded-2xl p-6 bg-white shadow-sm'>
-            <h2 className='font-semibold text-xl'>{plan.title}</h2>
-            <p className='text-gray-700 mt-2 text-sm text-[12px]'>
-              {plan.description}
-            </p>
-            <div className='my-3'>
-              <span
-                className={`${
-                  plan.title === "Free Plan"
-                    ? "text-[#80e5b1] text-3xl"
-                    : plan.title === "Enterprise Plan"
-                    ? "text-xl"
-                    : "text-xl"
-                } font-medium my-6`}
-              >
-                {plan.price}
-              </span>
-              <span className='text-sm font-medium'>{plan.period}</span>
-            </div>
-            <div className='h-[1px] bg-gray-200 mb-4'></div>
+          <div
+            key={index}
+            className="rounded-[26px] lg:rounded-[30px] px-6 pt-[28px] lg:pt-[44px] pb-6 h-[420px] bg-white shadow-sm flex flex-col justify-between"
+          >
+            <div>
+              <h2 className="font-semibold text-xl">{plan.title}</h2>
+              <p className="text-gray-700 mt-2 text-sm text-[12px]">
+                {plan.description}
+              </p>
+              <div className="my-3">
+                <span
+                  className={`${
+                    plan.title === "Free Plan"
+                      ? "text-[#80e5b1] text-3xl"
+                      : plan.title === "Enterprise Plan"
+                      ? "text-xl"
+                      : "text-xl"
+                  } font-medium my-6`}
+                >
+                  {plan.price}
+                </span>
+                <span className="text-sm font-medium">{plan.period}</span>
+              </div>
+              <div className="h-[1px] bg-gray-200 mb-4"></div>
 
-            <ul className='space-y-4 mb-8 text-[12px] font-medium'>
-              {plan.features.map((feature, i) => (
-                <li key={i} className='flex items-center gap-2'>
-                  <svg
-                    className={`w-5 h-5 text-[#80e5b1] ${
-                      typeof feature === "object" && feature.hideCheckmark
-                        ? "invisible"
-                        : ""
-                    }`}
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M5 13l4 4L19 7'
-                    />
-                  </svg>
-                  <span>
-                    {typeof feature === "object" ? feature.text : feature}
-                  </span>
-                </li>
-              ))}
-            </ul>
+              <ul className="space-y-4 mb-8 text-[12px] font-medium">
+                {plan.features.map((feature, i) => (
+                  <li key={i} className="flex items-center gap-2">
+                    <svg
+                      className={`w-5 h-5 text-[#80e5b1] ${
+                        typeof feature === "object" && feature.hideCheckmark
+                          ? "invisible"
+                          : ""
+                      }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>
+                      {typeof feature === "object" ? feature.text : feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
             {planType === "enterprise" ? (
               <a
-                href='mailto:contact@acemyx.com'
-                target='_blank'
-                rel='noopener noreferrer'
-                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all text-center inline-block ${plan.buttonStyle}`}
+                href="mailto:contact@acemyx.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full text-sm lg:text-lg py-4 lg:py-5 lg:px-4 rounded-xl text-white font-medium transition-all text-center inline-block ${plan.buttonStyle}`}
               >
                 {plan.buttonText}
               </a>
             ) : (
               <a
-                href='https://academy.acemyx.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className={`w-full py-3 px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle} inline-block text-center`}
+                href="https://academy.acemyx.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full text-sm lg:text-lg py-4 lg:py-5 lg:px-4 rounded-xl text-white font-medium transition-all ${plan.buttonStyle} inline-block text-center`}
               >
                 {plan.buttonText}
               </a>
