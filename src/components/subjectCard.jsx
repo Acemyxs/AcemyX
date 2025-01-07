@@ -134,7 +134,7 @@ export default function SubjectCard() {
               </div>
               <div className='flex justify-between items-start gap-6'>
                 <h3 className='text-xl font-semibold'>{subject.title}</h3>
-                <button className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
+                <a href={subject.link} target="_blank" className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
                   <svg
                     width='24'
                     height='24'
@@ -149,7 +149,7 @@ export default function SubjectCard() {
                     <line x1='5' y1='12' x2='19' y2='12'></line>
                     <polyline points='12 5 19 12 12 19'></polyline>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
