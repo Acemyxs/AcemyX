@@ -16,6 +16,7 @@ export default function ExamCard() {
       description:
         "Ace your JAMB exam with our comprehensive practice questions to boost your confidence!",
       image: "/image23.png",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=31",
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ export default function ExamCard() {
       description:
         "Assist students in getting ready for the West African examinations by providing practice questions and tracking their performance.",
       image: "/image19.png",
+      link: "https://academy.acmeyx.com/enrol/index.php?id=46",
     },
     // {
     //   id: 3,
@@ -125,7 +127,7 @@ export default function ExamCard() {
                 <div>
                   <h3 className='text-xl font-semibold mb-2'>{test.title}</h3>
                 </div>
-                <button className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
+                <a href={test.link} target="_blank" className='p-3 bg-text-color rounded-xl text-white group-hover:translate-x-1 transition-transform'>
                   <svg
                     width='24'
                     height='24'
@@ -140,7 +142,7 @@ export default function ExamCard() {
                     <line x1='5' y1='12' x2='19' y2='12'></line>
                     <polyline points='12 5 19 12 12 19'></polyline>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
