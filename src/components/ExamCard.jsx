@@ -16,7 +16,7 @@ export default function ExamCard() {
       description:
         "Ace your JAMB exam with our comprehensive practice questions to boost your confidence!",
       image: "/image23.png",
-      link: "https://academy.acmeyx.com/enrol/index.php?id=31",
+      link: "https://academy.acemyx.com/enrol/index.php?id=31",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function ExamCard() {
       description:
         "Assist students in getting ready for the West African examinations by providing practice questions and tracking their performance.",
       image: "/image19.png",
-      link: "https://academy.acmeyx.com/enrol/index.php?id=46",
+      link: "https://academy.acemyx.com/enrol/index.php?id=46",
     },
     // {
     //   id: 3,
