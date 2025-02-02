@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function FooterCopy() {
   const [email, setEmail] = useState("");
 
-  const phoneNumber = "2348143050414";
+  const phoneNumber = "2348122990975";
   const message = encodeURIComponent(
     "Hello! I will like to know more about AcemyX."
   );
