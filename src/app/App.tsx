@@ -12,41 +12,25 @@ export default function App() {
         style={{ scaleX: scrollYProgress }}
       />
 
-      {/* Unified responsive component */}
       <UnifiedApp />
 
-      {/* Back to top button */}
+      {/* Back to top */}
       <motion.button
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
-        className="fixed bottom-6 right-6 bg-[#fd4d26] text-white p-4 rounded-full shadow-lg z-50 cursor-pointer pointer-events-auto"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 bg-[#fd4d26] text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-lg z-50 cursor-pointer pointer-events-auto flex items-center justify-center text-base sm:text-lg font-bold"
       >
         ↑
       </motion.button>
 
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        body {
-          overflow-x: hidden;
-          width: 100vw;
-          margin: 0;
-          padding: 0;
-        }
-        * {
-          -webkit-tap-highlight-color: transparent;
-        }
+      <style dangerouslySetInnerHTML={{ __html: `
+        * { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+        body { margin: 0; padding: 0; overflow-x: hidden; }
+        img, video, svg { max-width: 100%; }
       `}} />
     </div>
   );

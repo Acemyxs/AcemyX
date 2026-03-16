@@ -2,3 +2,56 @@
 @source '../**/*.{js,ts,jsx,tsx}';
 
 @import 'tw-animate-css';
+
+/* ── Global resets ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; /* prevent iOS/Chrome desktop-mode font boost */
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* Prevent any element from breaking out of viewport */
+img, video, svg, canvas, iframe {
+  max-width: 100%;
+}
+
+/* ── Scrollbar hide utility ──────────────────────────────────── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Tailwind v4: register custom font utilities ─────────────── */
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+@utility font-body {
+  font-family: var(--font-body);
+}
+@utility font-ui {
+  font-family: var(--font-ui);
+}
+
+.fluid-h1  { font-size: clamp(1.75rem, 4vw + 0.5rem, 3.25rem); }
+.fluid-h2  { font-size: clamp(1.5rem,  3vw + 0.5rem, 2.5rem);  }
+.fluid-body { font-size: clamp(0.875rem, 1.5vw + 0.25rem, 1.125rem); }
+
+/* ── Safe container ─────────────────────────────────────────── */
+.safe-container {
+  width: 100%;
+  max-width: min(1400px, 100vw);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 7.5rem);
+}
