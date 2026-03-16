@@ -29,7 +29,7 @@ export function NavigationButtons() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleGetStartedClick}
-                className="bg-[#ffdb51] px-8 py-4 rounded-full cursor-pointer font-['Figtree',sans-serif] font-medium text-[#0d114d] text-[14px] pointer-events-auto shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-[#ffdb51] px-8 py-4 rounded-full cursor-pointer font-body font-medium text-[#0d114d] text-[14px] pointer-events-auto shadow-lg hover:shadow-xl transition-shadow"
             >
                 Get Started
             </motion.button>
@@ -38,7 +38,7 @@ export function NavigationButtons() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleJoinClassClick}
-                className="border-2 border-white px-8 py-4 rounded-full cursor-pointer font-['Figtree',sans-serif] font-medium text-white text-[14px] pointer-events-auto hover:bg-white/10 transition-colors"
+                className="border-2 border-white px-8 py-4 rounded-full cursor-pointer font-body font-medium text-white text-[14px] pointer-events-auto hover:bg-white/10 transition-colors"
             >
                 Join the Class
             </motion.button>

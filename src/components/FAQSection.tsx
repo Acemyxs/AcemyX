@@ -21,7 +21,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
                 onClick={handleClick}
                 type="button"
             >
-                <div className="flex-1 font-['Figtree',sans-serif] font-medium text-[#0d114d] text-[16px] pr-4">
+                <div className="flex-1 font-body font-medium text-[#0d114d] text-[16px] pr-4">
                     {question}
                 </div>
                 <div className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
@@ -39,7 +39,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                     >
-                        <div className="px-6 pb-6 text-[#4a4a4a] text-[14px] leading-[1.6] font-['Figtree',sans-serif]">
+                        <div className="px-6 pb-6 text-[#4a4a4a] text-[14px] leading-[1.6] font-body">
                             {answer}
                         </div>
                     </motion.div>
@@ -84,10 +84,10 @@ export function FAQSection() {
         >
             <div className="max-w-[400px] mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-[#0d114d] text-[32px] font-['Figtree',sans-serif] font-normal mb-3">
+                    <h2 className="text-[#0d114d] text-[32px] font-body font-normal mb-3">
                         FAQs
                     </h2>
-                    <p className="text-[#0d114d] text-[16px] font-['Figtree',sans-serif]">
+                    <p className="text-[#0d114d] text-[16px] font-body">
                         We're here to help you every step of the way.
                     </p>
                 </div>

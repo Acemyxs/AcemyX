@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
-};
+const ACADEMY_URL = "https://academy.acemyx.com/";
 
 const checkIcon = (
     <svg className="w-5 h-5 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none">
@@ -20,198 +15,144 @@ const features = [
     'Socratic AI Tutor & Progress Leaderboard',
 ];
 
+function PricingCard({ title, subtitle, price, period, cta, ctaHref }: {
+    title: string; subtitle: string; price: string; period: string; cta: string; ctaHref?: string;
+}) {
+    return (
+        <div className="bg-[#fafafa] rounded-[20px] p-5 sm:p-6 lg:p-8 flex flex-col justify-between gap-6 h-full">
+            <div className="space-y-5 sm:space-y-6">
+                <div className="space-y-1">
+                    <h3 className="text-[#0d114d] text-xl sm:text-2xl font-ui font-semibold">{title}</h3>
+                    <p className="text-[#7c7c7c] text-xs sm:text-sm font-ui font-normal">{subtitle}</p>
+                </div>
+                <div className="h-px bg-[#D2D2D2]" />
+                <div className="flex items-baseline gap-1 flex-wrap">
+                    <span className="text-[#0d114d] text-[34px] sm:text-[40px] font-ui font-medium leading-none">{price}</span>
+                    <span className="text-[#7c7c7c] text-sm sm:text-base font-ui font-normal">{period}</span>
+                </div>
+                <div className="space-y-3">
+                    {features.map((f, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                            {checkIcon}
+                            <span className="text-[#7c7c7c] text-xs sm:text-sm lg:text-base font-ui font-normal">{f}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {ctaHref ? (
+                <motion.a
+                    href={ctaHref}
+                    target={ctaHref.startsWith("mailto") ? undefined : "_blank"}
+                    rel={ctaHref.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                    whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
+                    className="mt-2 w-full bg-[#222] text-white py-3 sm:py-4 rounded-full font-ui font-medium text-sm sm:text-base text-center block"
+                >
+                    {cta}
+                </motion.a>
+            ) : (
+                <motion.button
+                    whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
+                    onClick={() => window.open(ACADEMY_URL, "_blank")}
+                    className="mt-2 w-full bg-[#222] text-white py-3 sm:py-4 rounded-full font-ui font-medium text-sm sm:text-base"
+                >
+                    {cta}
+                </motion.button>
+            )}
+        </div>
+    );
+}
+
 export function PricingSection() {
     const [isIndividual, setIsIndividual] = useState(true);
 
     return (
-      <section id="pricing" className="bg-white py-16 md:py-24">
-        <div className="container mx-auto px-6 md:px-[120px]">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12 space-y-6"
-          >
-            <h2 className="text-[#0d114d] text-[32px] md:text-[40px] leading-tight font-['Figtree:Regular',sans-serif]">
-              Plans and Pricing
-            </h2>
-            <p className="text-[#0d114d] text-base md:text-lg font-['Figtree:Regular',sans-serif]">
-              Flexible plans and solutions for business of all sizes
-            </p>
+        <section id="pricing" className="bg-white py-12 sm:py-16 lg:py-24">
+            <div className="safe-container">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-8 sm:mb-12 space-y-4 sm:space-y-6"
+                >
+                    <h2 className="text-[#0d114d] text-[28px] sm:text-[34px] lg:text-[40px] leading-tight font-body font-normal">
+                        Plans and Pricing
+                    </h2>
+                    <p className="text-[#0d114d] text-sm sm:text-base lg:text-lg font-body font-normal">
+                        Flexible plans and solutions for business of all sizes
+                    </p>
 
-            {/* Plan Type Toggle */}
-            <div className="inline-flex bg-[#f5f5f5] rounded-full p-1">
-              <button
-                onClick={() => setIsIndividual(true)}
-                className={`px-6 py-2 rounded-full text-sm font-['Inter:Medium',sans-serif] transition-colors ${isIndividual ? "bg-[#232323] text-white" : "text-black"}`}
-              >
-                Individual
-              </button>
-              <button
-                onClick={() => setIsIndividual(false)}
-                className={`px-6 py-2 rounded-full text-sm font-['Inter:Medium',sans-serif] transition-colors ${!isIndividual ? "bg-[#232323] text-white" : "text-black"}`}
-              >
-                Enterprise
-              </button>
+                    {/* Toggle */}
+                    <div className="inline-flex bg-[#f5f5f5] rounded-full p-1">
+                        <button
+                            onClick={() => setIsIndividual(true)}
+                            className={`px-5 sm:px-6 py-2 rounded-full text-sm font-ui font-medium transition-colors ${isIndividual ? "bg-[#232323] text-white" : "text-black"}`}
+                        >
+                            Individual
+                        </button>
+                        <button
+                            onClick={() => setIsIndividual(false)}
+                            className={`px-5 sm:px-6 py-2 rounded-full text-sm font-ui font-medium transition-colors ${!isIndividual ? "bg-[#232323] text-white" : "text-black"}`}
+                        >
+                            Enterprise
+                        </button>
+                    </div>
+                </motion.div>
+
+                <AnimatePresence mode="wait">
+                    {isIndividual ? (
+                        <motion.div
+                            key="individual"
+                            initial={{ opacity: 0, y: 16 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -16 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto"
+                        >
+                            <PricingCard title="Basic" subtitle="Access All Course Materials and Features" price="N500" period="/user per month" cta="Get started" />
+                            <PricingCard title="Standard" subtitle="Enjoy the same full access with a 20% discount when paid upfront." price="N1,200" period="/user per 3 months" cta="Get started" />
+                        </motion.div>
+                    ) : (
+                        <motion.div
+                            key="enterprise"
+                            initial={{ opacity: 0, y: 16 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -16 }}
+                            transition={{ duration: 0.3 }}
+                            className="max-w-sm mx-auto w-full"
+                        >
+                            <div className="bg-[#fafafa] rounded-[20px] p-5 sm:p-6 lg:p-8 flex flex-col justify-between gap-6">
+                                <div className="space-y-5 sm:space-y-6">
+                                    <div className="space-y-1">
+                                        <h3 className="text-[#0d114d] text-xl sm:text-2xl font-ui font-semibold">Enterprise Plan</h3>
+                                        <p className="text-[#7c7c7c] text-xs sm:text-sm font-ui font-normal">Tailored Solutions for Institutions</p>
+                                    </div>
+                                    <div className="h-px bg-[#D2D2D2]" />
+                                    <div className="flex items-baseline gap-2 flex-wrap">
+                                        <span className="text-[#0d114d] text-[34px] sm:text-[40px] font-ui font-medium leading-none">Custom</span>
+                                        <span className="text-[#7c7c7c] text-sm sm:text-base font-ui font-normal">Pricing</span>
+                                    </div>
+                                    <div className="space-y-3">
+                                        {["Every feature on Standard Plan and more.", "Scaled access for students", "Dedicated sales team support"].map((f, i) => (
+                                            <div key={i} className="flex items-start gap-2">
+                                                {checkIcon}
+                                                <span className="text-[#7c7c7c] text-xs sm:text-sm lg:text-base font-ui font-normal">{f}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                                <motion.a
+                                    href="mailto:contact@acemyx.com"
+                                    whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
+                                    className="mt-2 w-full bg-[#222] text-white py-3 sm:py-4 rounded-full font-ui font-medium text-sm sm:text-base text-center block"
+                                >
+                                    Contact Sales for Details
+                                </motion.a>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
-          </motion.div>
-
-          {/* Pricing Cards */}
-          <AnimatePresence mode="wait">
-            {isIndividual ? (
-              <motion.div
-                key="individual"
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.3 }}
-                className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto"
-              >
-                {/* Basic Plan */}
-                <div className="bg-[#fafafa] rounded-[20px] p-6 md:p-8 flex flex-col justify-between">
-                  <div className="space-y-6">
-                    <div className="space-y-1">
-                      <h3 className="text-[#222] text-2xl font-['Inter:Semi_bold',sans-serif]">
-                        Basic
-                      </h3>
-                      <p className="text-[#7c7c7c] text-sm font-['Inter:Regular',sans-serif]">
-                        Access All Course Materials and Features
-                      </p>
-                    </div>
-                    <div className="h-px bg-[#D2D2D2]" />
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-[#222] text-[40px] font-['Inter:Medium',sans-serif] leading-none">
-                        N500
-                      </span>
-                      <span className="text-[#7c7c7c] text-base font-['Inter:Regular',sans-serif]">
-                        /user per month
-                      </span>
-                    </div>
-                    <div className="space-y-3">
-                      {features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          {checkIcon}
-                          <span className="text-[#7c7c7c] text-sm md:text-base font-['Inter:Regular',sans-serif]">
-                            {feature}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() =>
-                      window.open("https://academy.acemyx.com/", "_blank")
-                    }
-                    className="mt-6 w-full bg-[#222] text-white py-4 rounded-full font-['Inter:Medium',sans-serif] text-base"
-                  >
-                    Get started
-                  </motion.button>
-                </div>
-
-                {/* Standard Plan */}
-                <div className="bg-[#fafafa] rounded-[20px] p-6 md:p-8 flex flex-col justify-between">
-                  <div className="space-y-6">
-                    <div className="space-y-1">
-                      <h3 className="text-[#222] text-2xl font-['Inter:Semi_bold',sans-serif]">
-                        Standard
-                      </h3>
-                      <p className="text-[#7c7c7c] text-sm font-['Inter:Regular',sans-serif]">
-                        Enjoy the same full access with a 20% discount when paid
-                        upfront.
-                      </p>
-                    </div>
-                    <div className="h-px bg-[#D2D2D2]" />
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-[#222] text-[40px] font-['Inter:Medium',sans-serif] leading-none">
-                        N1,200
-                      </span>
-                      <span className="text-[#7c7c7c] text-base font-['Inter:Regular',sans-serif]">
-                        /user per 3 months
-                      </span>
-                    </div>
-                    <div className="space-y-3">
-                      {features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          {checkIcon}
-                          <span className="text-[#7c7c7c] text-sm md:text-base font-['Inter:Regular',sans-serif]">
-                            {feature}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() =>
-                      window.open("https://academy.acemyx.com/", "_blank")
-                    }
-                    className="mt-6 w-full bg-[#222] text-white py-4 rounded-full font-['Inter:Medium',sans-serif] text-base"
-                  >
-                    Get started
-                  </motion.button>
-                </div>
-              </motion.div>
-            ) : (
-              <motion.div
-                key="enterprise"
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.3 }}
-                className="max-w-sm mx-auto w-full"
-              >
-                {/* Enterprise Plan Card */}
-                <div className="bg-[#fafafa] rounded-[20px] p-6 md:p-8 flex flex-col justify-between">
-                  <div className="space-y-6">
-                    <div className="space-y-1">
-                      <h3 className="text-[#222] text-2xl font-['Inter:Semi_bold',sans-serif]">
-                        Enterprise Plan
-                      </h3>
-                      <p className="text-[#7c7c7c] text-sm font-['Inter:Regular',sans-serif]">
-                        Tailored Solutions for Institutions
-                      </p>
-                    </div>
-                    <div className="h-px bg-[#D2D2D2]" />
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-[#222] text-[40px] font-['Inter:Medium',sans-serif] leading-none">
-                        Custom
-                      </span>
-                      <span className="text-[#7c7c7c] text-base font-['Inter:Regular',sans-serif]">
-                        Pricing
-                      </span>
-                    </div>
-                    <div className="space-y-3">
-                      {[
-                        "Every feature on Standard Plan and more.",
-                        "Scaled access for students",
-                        "Dedicated sales team support",
-                      ].map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          {checkIcon}
-                          <span className="text-[#7c7c7c] text-sm md:text-base font-['Inter:Regular',sans-serif]">
-                            {feature}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <motion.a
-                    href="mailto:contact@acemyx.com"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="mt-6 w-full bg-[#222] text-white py-4 rounded-full font-['Inter:Medium',sans-serif] text-base text-center block"
-                  >
-                    Contact Sales for Details
-                  </motion.a>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      </section>
+        </section>
     );
 }

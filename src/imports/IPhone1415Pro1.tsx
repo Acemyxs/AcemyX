@@ -27,7 +27,7 @@ function Wrapper2({ children }: React.PropsWithChildren<{}>) {
   return (
     <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full">
       <CheckmarkIcons />
-      <div className="basis-0 flex flex-col font-['Inter:Regular',sans-serif] font-normal grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px]">
+      <div className="basis-0 flex flex-col font-ui font-normal font-normal grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px]">
         {children}
       </div>
     </div>
@@ -38,7 +38,7 @@ function Wrapper1({ children }: React.PropsWithChildren<{}>) {
   return (
     <div className="bg-[#fafafa] relative rounded-[20px] shrink-0 w-full">
       <div className="overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[24px] items-start leading-[0] not-italic p-[32px] relative w-full">
+        <div className="content-stretch flex flex-col font-ui font-normal font-normal gap-[24px] items-start leading-[0] not-italic p-[32px] relative w-full">
           {children}
         </div>
       </div>
@@ -88,7 +88,7 @@ function Text2({
   return (
     <div
       className={clsx(
-        "absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[14.54px] justify-center leading-[0] left-0 text-[12px] text-[rgba(255,255,255,0.8)] top-[7.27px] tracking-[-0.056px] translate-y-[-50%]",
+        "absolute flex flex-col font-body font-normal font-normal h-[14.54px] justify-center leading-[0] left-0 text-[12px] text-[rgba(255,255,255,0.8)] top-[7.27px] tracking-[-0.056px] translate-y-[-50%]",
         additionalClassNames,
       )}
     >
@@ -105,7 +105,7 @@ type ItemLinkTextProps = {
 function ItemLinkText({ text }: ItemLinkTextProps) {
   return (
     <div className="h-[20px] opacity-80 relative shrink-0 w-full">
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] left-0 text-[14px] text-white top-[10px] tracking-[-0.056px] translate-y-[-50%] w-[162.31px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal justify-center leading-[0] left-0 text-[14px] text-white top-[10px] tracking-[-0.056px] translate-y-[-50%] w-[162.31px]">
         <p className="leading-[20px]">{text}</p>
       </div>
     </div>
@@ -122,7 +122,7 @@ function Heading3ButtonText({
 }: Heading3ButtonTextProps) {
   return (
     <div className="h-[71.99px] relative rounded-[16px] shrink-0 w-[342.02px]">
-      <div className="absolute flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[245.34px]">
+      <div className="absolute flex flex-col font-body font-medium font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[245.34px]">
         <p className="leading-[20px]">{text}</p>
       </div>
       <Helper5 additionalClassNames="top-[28.99px]" />
@@ -181,7 +181,7 @@ function ButtonText({ text }: ButtonTextProps) {
     <div className="bg-[#222] h-[56px] relative rounded-[999px] shrink-0 w-full">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="content-stretch flex items-center justify-center px-[20px] py-[10px] relative size-full">
-          <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-nowrap text-white tracking-[-0.3px]">
+          <div className="flex flex-col font-ui font-medium font-medium justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-nowrap text-white tracking-[-0.3px]">
             <p className="leading-[24px]">{text}</p>
           </div>
         </div>
@@ -252,10 +252,10 @@ type Helper3Props = {
 function Helper3({ text, text1 }: Helper3Props) {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 text-black text-nowrap w-full">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[32px] tracking-[-1.5px]">
+      <div className="flex flex-col font-ui font-medium font-medium justify-center relative shrink-0 text-[32px] tracking-[-1.5px]">
         <p className="leading-[1.2] text-nowrap">{text}</p>
       </div>
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[14px] tracking-[-0.3px]">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center relative shrink-0 text-[14px] tracking-[-0.3px]">
         <p className="leading-[1.5] text-nowrap">{text1}</p>
       </div>
     </div>
@@ -343,7 +343,7 @@ function LinkText1({ text }: LinkText1Props) {
         aria-hidden="true"
         className="absolute border border-[#0d114d] border-solid inset-0 pointer-events-none rounded-[200px]"
       />
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[14px] text-center text-nowrap tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[14px] text-center text-nowrap tracking-[-0.056px]">
         <p className="leading-[21.33px]">{text}</p>
       </div>
     </div>
@@ -433,7 +433,7 @@ function Text({ text, additionalClassNames = "" }: TextProps) {
       )}
     >
       <Helper />
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#1d202d] text-[7.77px] tracking-[-0.0363px] w-[min-content]">
+      <div className="flex flex-col font-body font-normal font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#1d202d] text-[7.77px] tracking-[-0.0363px] w-[min-content]">
         <p className="leading-[11.654px]">{text}</p>
       </div>
     </div>
@@ -486,7 +486,7 @@ type LinkTextProps = {
 function LinkText({ text }: LinkTextProps) {
   return (
     <div className="bg-[#ffdb51] content-stretch flex items-center justify-center px-[24px] py-[18px] relative rounded-[200px] shrink-0">
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[14px] text-center text-nowrap tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[14px] text-center text-nowrap tracking-[-0.056px]">
         <p className="leading-[21.33px]">{text}</p>
       </div>
     </div>
@@ -495,7 +495,7 @@ function LinkText({ text }: LinkTextProps) {
 
 function Frame34() {
   return (
-    <div className="content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[16px] items-start relative shrink-0 text-white w-full">
+    <div className="content-stretch flex flex-col font-body font-normal font-normal gap-[16px] items-start relative shrink-0 text-white w-full">
       <p className="leading-[44px] min-w-full relative shrink-0 text-[40px] tracking-[-1.2px] w-[min-content]">
         Dream Big. We’ll help you get there.
       </p>
@@ -519,7 +519,7 @@ function Link() {
         aria-hidden="true"
         className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[200px]"
       />
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[-0.056px]">
         <p className="leading-[21.33px]">Join the Class</p>
       </div>
     </div>
@@ -608,7 +608,7 @@ function Item() {
       data-name="Item"
     >
       <SolarLibraryLinear />
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[19.09px] justify-center leading-[0] relative shrink-0 text-[16px] text-white tracking-[-0.056px] w-[169.852px]">
+      <div className="flex flex-col font-body font-normal font-normal h-[19.09px] justify-center leading-[0] relative shrink-0 text-[16px] text-white tracking-[-0.056px] w-[169.852px]">
         <p className="leading-[22px]">High-quality prep.</p>
       </div>
     </div>
@@ -648,7 +648,7 @@ function Frame26() {
   return (
     <div className="absolute bg-white content-stretch flex flex-col h-[69px] items-start justify-between left-[160px] p-[7.77px] rounded-[7.77px] top-[38px] w-[193px]">
       <Helper />
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#1d202d] text-[7.77px] tracking-[-0.0363px] w-[min-content]">
+      <div className="flex flex-col font-body font-normal font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#1d202d] text-[7.77px] tracking-[-0.0363px] w-[min-content]">
         <p className="leading-[11.654px]">
           Complete 20 Practice Questions
         </p>
@@ -716,7 +716,7 @@ function Link1() {
       className="bg-[#ffdb51] content-stretch flex items-center justify-center px-[16px] py-[12px] relative rounded-[200px] shrink-0"
       data-name="Link"
     >
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[12px] text-center text-nowrap tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[12px] text-center text-nowrap tracking-[-0.056px]">
         <p className="leading-[17.15px]">Get Started</p>
       </div>
     </div>
@@ -794,7 +794,7 @@ function Frame32() {
 
 function Frame36() {
   return (
-    <div className="content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[16px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
+    <div className="content-stretch flex flex-col font-body font-normal font-normal gap-[16px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
       <div className="flex flex-col justify-center relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         <p className="leading-[40px]">{`Navigating University Exams Shouldn't Be a Barrier.`}</p>
       </div>
@@ -842,7 +842,7 @@ function Section() {
 
 function Frame37() {
   return (
-    <div className="content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[14px] items-start relative shrink-0 text-[#0d114d] w-full">
+    <div className="content-stretch flex flex-col font-body font-normal font-normal gap-[14px] items-start relative shrink-0 text-[#0d114d] w-full">
       <p className="leading-[40px] relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         Prepare, Practice, and Succeed.
       </p>
@@ -889,7 +889,7 @@ function Header1() {
 
 function Frame54() {
   return (
-    <div className="content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[14px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
+    <div className="content-stretch flex flex-col font-body font-normal font-normal gap-[14px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
       <div className="leading-[40px] relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         <p className="mb-0">{`Meet Your Personal `}</p>
         <p>24/7 Tutor.</p>
@@ -933,10 +933,10 @@ function Header2() {
 function Frame39() {
   return (
     <div className="content-stretch flex flex-col gap-[13px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium h-[24.55px] justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
+      <div className="flex flex-col font-body font-medium font-medium h-[24.55px] justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[24px]">Study at your own pace</p>
       </div>
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
+      <div className="flex flex-col font-body font-normal font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
         <p className="leading-[22px]">
           Share your goals with us, and AcemyX will build a
           custom plan that adapts as you learn.
@@ -958,10 +958,10 @@ function Frame40() {
 function Frame57() {
   return (
     <div className="content-stretch flex flex-col gap-[13px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
+      <div className="flex flex-col font-body font-medium font-medium justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[24px]">Smart Learning Tools</p>
       </div>
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
+      <div className="flex flex-col font-body font-normal font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
         <p className="leading-[22px]">
           Our technology identifies your strengths and shows you
           exactly where to focus to gain the most points.
@@ -983,12 +983,12 @@ function Frame41() {
 function Frame58() {
   return (
     <div className="content-stretch flex flex-col gap-[13px] items-start leading-[0] relative shrink-0 text-[#0d114d] w-full">
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
+      <div className="flex flex-col font-body font-medium font-medium justify-center relative shrink-0 text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[24px]">
           Learn with Friends and Mentors
         </p>
       </div>
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
+      <div className="flex flex-col font-body font-normal font-normal justify-center relative shrink-0 text-[16px] tracking-[-0.064px] w-full">
         <p className="leading-[22px]">{`You aren't in this alone. Connect with peers and experts to solve tough problems together.`}</p>
       </div>
     </div>
@@ -1030,7 +1030,7 @@ function Frame44() {
   return (
     <div className="content-stretch flex gap-[6px] items-center relative shrink-0">
       <Svg />
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium h-[21.82px] justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[18px] tracking-[-0.056px] w-[77.189px]">
+      <div className="flex flex-col font-body font-medium font-medium h-[21.82px] justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[18px] tracking-[-0.056px] w-[77.189px]">
         <p className="leading-[18px]">Trustpilot</p>
       </div>
     </div>
@@ -1105,7 +1105,7 @@ function Frame46() {
 
 function Frame48() {
   return (
-    <div className="absolute content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[14px] items-start left-0 text-[#0d114d] top-[0.9px] w-[342.12px]">
+    <div className="absolute content-stretch flex flex-col font-body font-normal font-normal gap-[14px] items-start left-0 text-[#0d114d] top-[0.9px] w-[342.12px]">
       <div className="flex flex-col justify-center leading-[40px] relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         <p className="mb-0">{`Trusted by Leading Educators `}</p>
         <p>and Foundations.</p>
@@ -1141,7 +1141,7 @@ function Frame47() {
 
 function Frame59() {
   return (
-    <div className="content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[14px] items-start relative shrink-0 text-[#0d114d] text-center w-[342.12px]">
+    <div className="content-stretch flex flex-col font-body font-normal font-normal gap-[14px] items-start relative shrink-0 text-[#0d114d] text-center w-[342.12px]">
       <div className="flex flex-col justify-center leading-[0] relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         <p className="leading-[40px]">Plans and Pricing</p>
       </div>
@@ -1242,7 +1242,7 @@ function Badge() {
       className="bg-[#eaeaea] content-stretch flex gap-[2px] items-center justify-center px-[8px] py-[2px] relative rounded-[999px] shrink-0"
       data-name="Badge"
     >
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#222] text-[8px] text-center text-nowrap">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#222] text-[8px] text-center text-nowrap">
         <p className="leading-[16px]">Save 20%</p>
       </div>
     </div>
@@ -1255,11 +1255,11 @@ function Switch() {
       className="content-stretch flex gap-[6px] items-center relative shrink-0"
       data-name="Switch"
     >
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#7c7c7c] text-[12px] text-nowrap tracking-[-0.2px]">
+      <p className="font-ui font-normal font-normal leading-[20px] not-italic relative shrink-0 text-[#7c7c7c] text-[12px] text-nowrap tracking-[-0.2px]">
         Monthly
       </p>
       <Toggle />
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[20px] not-italic relative shrink-0 text-[#7c7c7c] text-[12px] text-nowrap tracking-[-0.2px]">
+      <p className="font-ui font-medium font-medium leading-[20px] not-italic relative shrink-0 text-[#7c7c7c] text-[12px] text-nowrap tracking-[-0.2px]">
         Yearly
       </p>
       <Badge />
@@ -1273,7 +1273,7 @@ function Button() {
       className="bg-[#232323] content-stretch flex items-center justify-center px-[24px] py-[8px] relative rounded-[100px] shrink-0"
       data-name="Button"
     >
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[-0.5px]">
+      <div className="flex flex-col font-ui font-medium font-medium justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap text-white tracking-[-0.5px]">
         <p className="leading-[1.5]">{`Individual `}</p>
       </div>
     </div>
@@ -1286,7 +1286,7 @@ function Button1() {
       className="content-stretch flex items-center justify-center px-[24px] py-[8px] relative rounded-[100px] shrink-0"
       data-name="Button"
     >
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center text-nowrap tracking-[-0.5px]">
+      <div className="flex flex-col font-ui font-medium font-medium justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center text-nowrap tracking-[-0.5px]">
         <p className="leading-[1.5]">Enterprise</p>
       </div>
     </div>
@@ -1318,7 +1318,7 @@ function Frame50() {
 function Frame60() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[32px] text-center tracking-[-0.96px] w-full">
+      <div className="flex flex-col font-body font-normal font-normal justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[32px] text-center tracking-[-0.96px] w-full">
         <p className="leading-[40px]">
           Trusted by Students Across Nigeria.
         </p>
@@ -1342,10 +1342,10 @@ function Frame1() {
 function Frame2() {
   return (
     <div className="content-stretch flex flex-col items-start leading-[0] not-italic relative shrink-0 text-center text-nowrap">
-      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[16px] text-black tracking-[-0.3px]">
+      <div className="flex flex-col font-ui font-medium font-medium justify-center relative shrink-0 text-[16px] text-black tracking-[-0.3px]">
         <p className="leading-[1.5] text-nowrap">Ngozi Okeke</p>
       </div>
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.2px]">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.2px]">
         <p className="leading-[1.5] text-nowrap">
           JAMB Aspirant
         </p>
@@ -1368,7 +1368,7 @@ function Frame21() {
     <div className="bg-[#fafafa] h-[420px] relative rounded-[24px] shrink-0 w-full">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col items-start justify-between p-[32px] relative size-full">
-          <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#5e5e5e] text-[20px] tracking-[-0.3px] w-[min-content]">
+          <div className="flex flex-col font-body font-normal font-normal justify-center leading-[0] min-w-full relative shrink-0 text-[#5e5e5e] text-[20px] tracking-[-0.3px] w-[min-content]">
             <p className="leading-[28px]">
               “Acemyx is a game-changer! The interactive lessons
               and mock exams made learning fun and effective.
@@ -1882,7 +1882,7 @@ function Frame10() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
       <Text1 text="Free" />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
         <p className="leading-[1.5]">
           Experience AcemyX at No Cost
         </p>
@@ -1935,7 +1935,7 @@ function Frame12() {
   return (
     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full">
       <Text1 text="Basic" />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
         <p className="leading-[1.5]">
           Access All Course Materials and Features
         </p>
@@ -2016,7 +2016,7 @@ function Frame30() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full">
       <Frame16 />
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
+      <div className="flex flex-col font-ui font-normal font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#7c7c7c] text-[14px] tracking-[-0.3px] w-full">
         <p className="leading-[1.5]">
           Enjoy the same full access with a 20% discount when
           paid upfront.
@@ -2054,7 +2054,7 @@ function QuestionNumber1040X1040Png2() {
 function Header4() {
   return (
     <div
-      className="absolute content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[12px] items-center leading-[0] left-[calc(50%+0.51px)] text-[#0d114d] text-center top-0 translate-x-[-50%] w-[342.02px]"
+      className="absolute content-stretch flex flex-col font-body font-normal font-normal gap-[12px] items-center leading-[0] left-[calc(50%+0.51px)] text-[#0d114d] text-center top-0 translate-x-[-50%] w-[342.02px]"
       data-name="Header"
     >
       <div className="flex flex-col justify-center relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
@@ -2074,7 +2074,7 @@ function Heading3Button() {
       className="h-[71.99px] relative rounded-[16px] shrink-0 w-[342.02px]"
       data-name="Heading 3 → Button"
     >
-      <div className="absolute flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[246.94px]">
+      <div className="absolute flex flex-col font-body font-medium font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[246.94px]">
         <p className="leading-[20px]">
           How do I sign up for AcemyX
         </p>
@@ -2105,7 +2105,7 @@ function Heading3Button1() {
       className="h-[71.99px] relative rounded-[16px] shrink-0 w-[342.02px]"
       data-name="Heading 3 → Button"
     >
-      <div className="absolute flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.19px] translate-y-[-50%] w-[232.23px]">
+      <div className="absolute flex flex-col font-body font-medium font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.19px] translate-y-[-50%] w-[232.23px]">
         <p className="leading-[20px]">
           What subjects are available on the platform?
         </p>
@@ -2136,7 +2136,7 @@ function Heading3Button2() {
       className="h-[71.99px] relative rounded-[16px] shrink-0 w-[342.02px]"
       data-name="Heading 3 → Button"
     >
-      <div className="absolute flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[199.27px]">
+      <div className="absolute flex flex-col font-body font-medium font-medium justify-center leading-[0] left-[23.99px] text-[#0d114d] text-[16px] top-[35.18px] translate-y-[-50%] w-[199.27px]">
         <p className="leading-[20px]">
           How do practice tests on Moodle work?
         </p>
@@ -2212,7 +2212,7 @@ function Section1() {
 
 function Frame51() {
   return (
-    <div className="absolute content-stretch flex flex-col font-['Figtree:Regular',sans-serif] font-normal gap-[13px] items-start leading-[0] left-0 text-white top-[-0.09px] w-[339.92px]">
+    <div className="absolute content-stretch flex flex-col font-body font-normal font-normal gap-[13px] items-start leading-[0] left-0 text-white top-[-0.09px] w-[339.92px]">
       <div className="flex flex-col justify-center relative shrink-0 text-[32px] tracking-[-0.96px] w-full">
         <p className="leading-[40px]">Still Need a Hand?</p>
       </div>
@@ -2233,7 +2233,7 @@ function Link2() {
       className="bg-[#dcfa7f] content-stretch flex items-center justify-center px-[24px] py-[18px] relative rounded-[200px] shrink-0"
       data-name="Link"
     >
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[16px] text-center text-nowrap tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[#0d114d] text-[16px] text-center text-nowrap tracking-[-0.056px]">
         <p className="leading-[21.33px]">Chat with a Mentor</p>
       </div>
     </div>
@@ -2250,7 +2250,7 @@ function Link3() {
         aria-hidden="true"
         className="absolute border border-solid border-white inset-0 pointer-events-none rounded-[200px]"
       />
-      <div className="flex flex-col font-['Figtree:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-medium font-medium justify-center leading-[0] relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[-0.056px]">
         <p className="leading-[21.33px]">Email Support</p>
       </div>
     </div>
@@ -2394,7 +2394,7 @@ function Link4() {
       className="absolute h-[19.09px] left-[0.99px] top-[0.57px] w-[44.99px]"
       data-name="Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:SemiBold',sans-serif] font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[45.327px]">
+      <div className="absolute flex flex-col font-body font-semibold font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[45.327px]">
         <p className="leading-[24px]">About</p>
       </div>
     </div>
@@ -2407,7 +2407,7 @@ function ItemLink2() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-full"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[83.579px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[83.579px]">
         <p className="leading-[20px]">How it Works</p>
       </div>
     </div>
@@ -2420,7 +2420,7 @@ function ItemLink3() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[42.5px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[42.83px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[42.83px]">
         <p className="leading-[20px]">Pricing</p>
       </div>
     </div>
@@ -2433,7 +2433,7 @@ function ItemLink4() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[34.3px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[34.604px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[34.604px]">
         <p className="leading-[20px]">FAQs</p>
       </div>
     </div>
@@ -2446,7 +2446,7 @@ function ItemLink5() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[51.32px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[51.677px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[51.677px]">
         <p className="leading-[20px]">Reviews</p>
       </div>
     </div>
@@ -2459,7 +2459,7 @@ function ItemLink6() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[70.61px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[70.919px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[70.919px]">
         <p className="leading-[20px]">Contact Us</p>
       </div>
     </div>
@@ -2499,7 +2499,7 @@ function Link5() {
       className="h-[19.09px] relative shrink-0 w-[85.24px]"
       data-name="Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:SemiBold',sans-serif] font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[85.572px]">
+      <div className="absolute flex flex-col font-body font-semibold font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[85.572px]">
         <p className="leading-[24px]">Community</p>
       </div>
     </div>
@@ -2512,7 +2512,7 @@ function ItemLink7() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[64.84px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[65.24px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[65.24px]">
         <p className="leading-[20px]">Resources</p>
       </div>
     </div>
@@ -2550,7 +2550,7 @@ function Link6() {
       className="h-[19.09px] relative shrink-0 w-[61.69px]"
       data-name="Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:SemiBold',sans-serif] font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[62.08px]">
+      <div className="absolute flex flex-col font-body font-semibold font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[62.08px]">
         <p className="leading-[24px]">Account</p>
       </div>
     </div>
@@ -2563,7 +2563,7 @@ function ItemLink8() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[98.76px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[99.113px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[99.113px]">
         <p className="leading-[20px]">Create Account</p>
       </div>
     </div>
@@ -2576,7 +2576,7 @@ function ItemLink9() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-full"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[160.214px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[160.214px]">
         <p className="leading-[20px]">
           Login to Existing Account
         </p>
@@ -2591,7 +2591,7 @@ function ItemLink10() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[134.11px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[134.414px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[134.414px]">
         <p className="leading-[20px]">Get Account Support</p>
       </div>
     </div>
@@ -2629,7 +2629,7 @@ function Link7() {
       className="h-[19.09px] relative shrink-0 w-full"
       data-name="Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:SemiBold',sans-serif] font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[149.206px]">
+      <div className="absolute flex flex-col font-body font-semibold font-semibold h-[19.09px] justify-center leading-[0] left-0 text-[16px] text-white top-[9.55px] tracking-[-0.056px] translate-y-[-50%] w-[149.206px]">
         <p className="leading-[24px]">Exams</p>
       </div>
     </div>
@@ -2642,7 +2642,7 @@ function ItemLink11() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-full"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[109.209px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[109.209px]">
         <p className="leading-[20px]">JAMB Prep</p>
       </div>
     </div>
@@ -2655,7 +2655,7 @@ function ItemLink12() {
       className="h-[17.27px] opacity-80 relative shrink-0 w-[86.8px]"
       data-name="Item → Link"
     >
-      <div className="absolute flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[87.134px]">
+      <div className="absolute flex flex-col font-body font-normal font-normal h-[17.27px] justify-center leading-[0] left-0 text-[14px] text-white top-[8.64px] tracking-[-0.056px] translate-y-[-50%] w-[87.134px]">
         <p className="leading-[20px]">WAEC Tutor</p>
       </div>
     </div>
@@ -2756,7 +2756,7 @@ function Frame53() {
   return (
     <div className="content-stretch flex items-center relative shrink-0">
       <Link8 />
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal h-[14.54px] justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] tracking-[-0.056px] w-[9.246px]">
+      <div className="flex flex-col font-body font-normal font-normal h-[14.54px] justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] tracking-[-0.056px] w-[9.246px]">
         <p className="leading-[16px]">{` | `}</p>
       </div>
       <Link9 />
@@ -2770,7 +2770,7 @@ function Container4() {
       className="absolute content-stretch flex flex-col gap-[4px] items-start justify-center left-[calc(50%-48.5px)] top-[calc(50%+0.5px)] translate-x-[-50%] translate-y-[-50%]"
       data-name="Container"
     >
-      <div className="flex flex-col font-['Figtree:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] text-nowrap tracking-[-0.056px]">
+      <div className="flex flex-col font-body font-normal font-normal justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] text-nowrap tracking-[-0.056px]">
         <p className="leading-[16px]">{`Copyright © 2025 AcemyX. All rights reserved. `}</p>
       </div>
       <Frame53 />
